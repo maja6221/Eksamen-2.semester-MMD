@@ -1,1 +1,278 @@
-<footer></footer>
+<!-- <main> -->
+<footer>
+  <div class="footer_alt">
+    <div class="boks1">
+      <h3>Viktoria Ceramic Studio CPH</h3>
+      <p>Vesterbrogade 24B, 1620 Copenhagen</p>
+      <h3 class="hours">Opening Hours:</h3>
+      <p>Wedensday - Friday: 11:00-17:00</p>
+      <p>Saturday: 10:00-16:00</p>
+    </div>
+    <div class="boks2">
+      <h3>Contact</h3>
+      <p>Mails are answered within 48 hours on weekdays.</p>
+    </div>
+    <div class="boks3">
+      <h3>Help</h3>
+      <p>Return Policy</p>
+      <p>Terms of service</p>
+      <p>Private Policy</p>
+    </div>
+    <div class="boks4">
+      <h3>Subscribe to our newsletter</h3>
+      <div class="inputs">
+        
+          <input class="email" type="text" placeholder="Email Address" name="email" required />
+        
+        <div class="knap">
+            <a href="form.astro"><button class="sign_up">SIGN UP</button></a>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.facebook.com/omada.wine?_ga=2.10018865.548852503.1681978822-1109993795.1679914562"> <img class="facebook" src="./images/facebook_icon.webp" alt="" /></a>
+    <a href="https://www.instagram.com/omada.wine/?_ga=2.10018865.548852503.1681978822-1109993795.1679914562"> <img class="instagram" src="./images/instagram.webp" alt="" /></a>
+  </div>
+</footer>
+
+<style>
+  .inputs {
+    padding-top: 15px;
+  }
+
+  .facebook {
+    width: 18%;
+    margin-top: -11.7px;
+    margin-left: 45px;
+  }
+  .instagram {
+    width: 24%;
+    margin-top: -6px;
+    margin-left: -19px;
+  }
+
+  .cookie {
+    margin-left: 10%;
+    padding-bottom: 10px;
+  }
+
+  .bar_1 {
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bar_2 {
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .email {
+    width: 100%;
+    padding: 10px;
+    margin: 2px 0 5px 0;
+    border: 0.5px solid black;
+    background: #ffffff;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .knap {
+    padding-top: 10px;
+    padding-inline: 30%;
+  }
+  button {
+    width: 100%;
+    background: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    border: 0.5px solid black;
+    padding: 10px;
+    cursor: pointer;
+    
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .footer_alt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-inline: 8%;
+  }
+
+  h3 {
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2.1;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .hours {
+    padding-top: 20px;
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+    /* letter-spacing: 2px; */
+  }
+
+  .boks4 {
+    margin-inline: 3%;
+  }
+
+  .boks3 {
+    margin-inline: 20%;
+  }
+
+  .boks2 {
+    margin-inline: 20%;
+  }
+
+  .img1 {
+    width: 90%;
+    padding-top: 20px;
+  }
+
+  .img2 {
+    width: 47%;
+    padding-top: 40px;
+  }
+
+  footer {
+    background-color: #ede9df;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    /* display: block; */
+  }
+
+  .boks1 {
+    margin-inline: 3%;
+    margin-top: 3%;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+    
+  }
+
+
+  @media (max-width: 600px) {
+    .footer_alt {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+
+    .boks1 {
+      padding-bottom: 15px;
+      padding-top: 30px;
+    }
+
+    .boks2 {
+      padding-bottom: 35px;
+      padding-top: 30px;
+      margin-inline: 3%;
+    }
+
+    .boks3 {
+      padding-bottom: 43px;
+      padding-top: 10px;
+      margin-inline: 3%;
+    }
+
+    .img1 {
+      width: 40%;
+    }
+
+    .img2 {
+      width: 25%;
+      padding-bottom: 13px;
+    }
+
+    .footer_bar {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #2676f3;
+      padding-bottom: 3%;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .bar_1 {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .bar_2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 3%;
+    }
+
+    .cookie {
+      margin-left: 3%;
+      padding-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .health {
+      margin-left: 3%;
+      padding-bottom: 20px;
+      padding-top: 15px;
+      font-size: 14px;
+    }
+
+    .omada {
+      padding-bottom: 15px;
+      padding-top: 8px;
+      font-size: 14px;
+    }
+
+    .facebook {
+      width: 4%;
+      margin-left: 0.5px;
+      padding-top: 20px;
+      padding-bottom: 8px;
+      overflow: hidden;
+    }
+
+    .instagram {
+      width: 4.5%;
+      padding-top: 1%;
+      margin-left: 1.2px;
+    }
+  }
+</style>
