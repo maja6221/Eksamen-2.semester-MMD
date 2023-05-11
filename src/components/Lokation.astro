@@ -1,0 +1,187 @@
+<main>
+<div>
+  <h1>Værkstedsbutikken</h1>
+  <hr class="hr1" />
+
+  <div class="grid">
+    <h2 class="h2">Lokation:</h2>
+    <p class="p1">Vesterbrogade 24B, 1620 København</p>
+    <p class="p1">(Gå ind i baggården og ned i kælderen)</p>
+
+    <h2 class="h2_1">Åbningstider:</h2>
+    <p class="p2">Onsdag - Fredag: 11:00 - 17:00</p>
+    <p class="p3">Lørdage: 10:00 - 16:00</p>
+  </div>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.9051225951644!2d12.555470076530007!3d55.67324999811613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652531b21252a7d%3A0xf268ee649bb45d69!2sViktoria%20Ceramic%20Studio!5e0!3m2!1sda!2sdk!4v1683816168774!5m2!1sda!2sdk"
+    width="515"
+    height="350"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</main>
+
+<style>
+
+main {
+  margin-inline: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-inline: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+}
+
+.hr1 {
+    margin-bottom: 2%;
+    border: 0;
+    border-top: 1.5px solid  black;
+    
+
+  }
+  h1 {
+    font-family: Bebas neue;
+    padding-top: 10%;
+    font-size: 30px;
+   
+    padding-bottom: 3.8%;
+  }
+
+  .p1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+ 
+    padding-bottom: 20px;
+    grid-column: 1;
+  }
+
+  .p2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    
+    padding-bottom: 20px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .p3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    
+    padding-bottom: 20px;
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .h2 {
+    font-family: Bebas neue;
+    padding-top: 5%;
+    font-size: 20px;
+    
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .h2_1 {
+    font-family: Bebas neue;
+    padding-top: 5%;
+    font-size: 20px;
+    padding-left: 15%;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  iframe {
+    
+    padding-top: 10%;
+  }
+
+  .grid {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+
+  @media (max-width: 600px) {
+
+    .hr1 {
+    margin-bottom: 2%;
+    border: 0;
+    border-top: 1.5px solid  black;
+    margin-left: 0%;
+
+  }
+    h1 {
+    font-family: Bebas neue;
+    padding-top: 10%;
+    font-size: 30px;
+    padding-left: 0%;
+  }
+
+  .p1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    padding-left: 0%;
+    padding-bottom: 20px;
+    grid-column: 1;
+    padding-right: 15%;
+  }
+
+  .p2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    padding-left: 15%;
+    padding-bottom: 20px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .p3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    padding-left: 15%;
+    padding-bottom: 20px;
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+ 
+
+  .h2 {
+    font-family: Bebas neue;
+    padding-top: 5%;
+    font-size: 20px;
+    padding-left: 0%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .h2_1 {
+    font-family: Bebas neue;
+    padding-top: 5%;
+    font-size: 20px;
+    padding-left: 15%;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  iframe {
+    width: 100%;
+    padding-left: 0%;
+    padding-top: 10%;
+  }
+
+  .grid {
+    display: grid;
+    padding-left: 0%;
+  
+  }
+
+  }
+</style>

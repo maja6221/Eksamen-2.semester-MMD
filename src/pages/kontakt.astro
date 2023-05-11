@@ -2,8 +2,40 @@
 import Footer from "../components/Footer.astro";
 import "../style/mutual.css";
 import Header from "../components/Header.astro";
+import Kontakt from "../components/Kontakt.astro";
+import Form_kontakt from  "../components/Form_kontakt.astro";
+import Lokation from  "../components/Lokation.astro";
 ---
 
 <Header />
 
+<main>
+  
+<Kontakt />
+<div class="div1">
+<Form_kontakt />
+<Lokation />
+</div>
+
+
+
+</main>
+
 <Footer />
+
+
+<style>
+
+    .div1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 600px) {
+        .div1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    }
+
+</style>

@@ -1,0 +1,231 @@
+<main>
+<div id="mainGrid">
+  <form>
+    <h1>Kontakt os</h1>
+    <hr class="hr1" />
+    <label class="email" for="name">Navn</label>
+    <div class="name">
+      <div class="form-felt1">
+        <input placeholder="Fornavn" type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-felt2">
+        <input placeholder="Efternavn" type="email" id="email" name="email" required />
+      </div>
+    </div>
+
+    <label class="email" for="email">E-mail</label>
+    <div class="form-felt">
+      <input placeholder="f.eks. sophiejensen@gmail.com" type="email" id="email" name="email" required />
+    </div>
+
+    <label class="email" for="email">Emne</label>
+    <div class="form-felt">
+      <input placeholder="" type="text" id="email" name="kodeord" required />
+    </div>
+
+    <label class="email" for="email">Skriv din besked her</label>
+    <div class="form-felt">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <button class="knap" type="submit">Send</button>
+  </form>
+</div>
+</main>
+<style>
+
+main {
+  margin-inline: 15%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-inline: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+}
+
+ 
+ .hr1 {
+    margin-bottom: 2%;
+    border: 0;
+    border-top: 1.5px solid  black;
+  }
+ h1 {
+    font-family: Bebas neue;
+    font-size: 30px;
+    
+    padding-bottom: 2%;
+  }
+  .name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+    color: #e6536d;
+  }
+
+  .form-felt1 {
+    grid-column: 1;
+
+    padding-bottom: 15px;
+  }
+
+  .form-felt2 {
+    grid-column: 2;
+
+    padding-bottom: 15px;
+  }
+
+  .navn {
+    grid-column: 1;
+    grid-row: 1;
+    font-family: bebas neue;
+  }
+
+  .efternavn {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  form {
+    display: grid;
+    width: 100%;
+    gap: 0.5em;
+    margin-top: 10%;
+  }
+
+  .form-felt {
+    display: grid;
+    gap: 5px;
+    padding-bottom: 15px;
+  }
+
+  .form-felt2 {
+    align-self: center;
+  }
+  #mainGrid {
+    display: grid;
+  }
+
+  .formGap {
+    gap: 1em;
+  }
+
+  #email {
+    padding: 10px;
+    padding-right: 40%;
+    
+  }
+
+  .email {
+    color: #e6536d;
+    font-family: bebas neue;
+    
+  }
+
+  .knap {
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    border: 0.5px solid black;
+    color: black;
+    font-family: bebas neue;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: unset;
+  }
+
+  .knap:hover {
+    color: white;
+    background-color: black;
+  }
+
+
+
+  @media (max-width: 600px) {
+    .name {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 10px;
+      color: #e6536d;
+    }
+
+    .form-felt1 {
+      grid-column: 1;
+      padding-right: 10px;
+      padding-bottom: 15px;
+    }
+
+    .form-felt2 {
+      grid-column: 2;
+
+      padding-bottom: 15px;
+    }
+
+    .navn {
+      grid-column: 1;
+      grid-row: 1;
+      font-family: bebas neue;
+    }
+
+    .efternavn {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    form {
+      display: grid;
+      width: 100%;
+      gap: 0.5em;
+      margin-top: 10%;
+    }
+
+    .form-felt {
+      display: grid;
+      gap: 5px;
+      padding-bottom: 15px;
+    }
+
+    .form-felt2 {
+      align-self: center;
+    }
+
+    .formGap {
+      gap: 1em;
+    }
+
+    #email {
+      padding: 10px;
+      padding-right: 10%;
+    }
+
+    .email {
+      color: #e6536d;
+      font-family: bebas neue;
+      
+    }
+
+    .knap {
+      background-color: white;
+      border: 0.5px solid black;
+      color: black;
+      font-family: bebas neue;
+      padding: 8px;
+      border-radius: 5px;
+      font-size: unset;
+    }
+
+    .knap:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+
+</style>
