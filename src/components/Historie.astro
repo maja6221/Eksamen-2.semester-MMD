@@ -1,6 +1,6 @@
 <div class="grid">
   <div class="div1">
-    <h1 class="h1_historie">historien bag viktoria ceramic studio</h1>
+    <h1 class="h1_historie">HISTORIEN BAG</h1>
 
     <p>Historien bag navnet ”Viktoria” stammer fra da værkstedet lå i en gammel stald i Viktoriagade få gader væk fra dets nuværende placering på Vesterbrogade 24B.</p>
     <p>
@@ -52,7 +52,7 @@
 
   p {
     font-family: 'Raleway', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     padding-bottom: 5%;
      line-height: 1.5em;
   }
@@ -75,21 +75,7 @@
   }
 
   @media (max-width: 600px) {
-    button {
-      border: none;
-      padding: 20px;
-      background-color: palevioletred;
-      font-family: 'Raleway', sans-serif;
-      font-size: 17px;
-      border-radius: 5px;
-      color: black;
-      cursor: pointer;
-    }
 
-    button:hover {
-      background-color: white;
-      color: palevioletred;
-    }
     .grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -100,21 +86,34 @@
     }
 
     .h1_historie {
-      font-family: bebas neue;
-      font-size: 27px;
+        font-family: "commuters-sans", sans-serif;
+      font-size: 20px;
       padding-bottom: 30px;
     }
 
     p {
         font-family: 'Raleway', sans-serif;
-      font-size: 17px;
+      font-size: 15px;
       padding-bottom: 5%;
+      line-height: 1.5em;
     }
+
+    .div1 {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 0%;
+    
+  }
 
     a {
       text-decoration: none;
       font-weight: bold;
       color: palevioletred;
     }
+
+    .div2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
   }
 </style>
