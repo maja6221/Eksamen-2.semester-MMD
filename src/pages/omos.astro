@@ -2,8 +2,35 @@
 import Footer from "../components/Footer.astro";
 import "../style/mutual.css";
 import Header from "../components/Header.astro";
+import Historie from "../components/Historie.astro";
+import Omviktoria from "../components/Omviktoria.astro";
 ---
 
 <Header />
 
+<Omviktoria />
+
+<main>
+    <Historie />
+</main>
+
 <Footer />
+
+<style>
+
+main {
+  margin-inline: 7.5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-inline: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+}
+
+</style>
