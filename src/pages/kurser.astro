@@ -8,6 +8,7 @@ import KurserProdukt from "../components/KurserProdukt.astro";
 
 <Header />
 <KurserImg title="KURSER" />
+<section class="kurser">
 <KurserProdukt titel="WEEKEND DREJEKURSUS" pris="from DKK 2,750.00" billede="/images/kurser_1.jpg"/>
 <KurserProdukt titel="SØNDAGSSKOLE I MODELLERING, KVÆSTNING & STØBNING" pris="DKK 1,200.00" billede="/images/kurser_1.jpg"/>
 <KurserProdukt titel="SKULPTUR WORKSHOP" pris="DKK 1,850.00" billede="/images/kurser_1.jpg"/>
@@ -15,4 +16,17 @@ import KurserProdukt from "../components/KurserProdukt.astro";
 <KurserProdukt titel="KERAMIK KURSUS (HVERDAGE)" pris="DKK 4,800.00" billede="/images/kurser_1.jpg"/>
 <KurserProdukt titel="WEEKDAY EVENING COURSES (ENGLISH)" pris="DKK 4,800.00" billede="/images/kurser_1.jpg"/>
 <KurserProdukt titel="SØNDAGSSKOLE I DREJNING" pris="DKK 1,500.00" billede="/images/kurser_1.jpg"/>
+<KurserProdukt titel="SØNDAGSSKOLE I DREJNING" pris="DKK 1,500.00" billede="/images/kurser_1.jpg"/>
+<KurserProdukt titel="SØNDAGSSKOLE I DREJNING" pris="DKK 1,500.00" billede="/images/kurser_1.jpg"/>
+</section>
 <Footer />
+
+<style>
+@media (min-width: 1000px) {
+.kurser {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
+</style>
