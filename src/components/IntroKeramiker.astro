@@ -1,0 +1,34 @@
+---
+const {brand, navn, beskrivelse} = Astro.props;
+---
+
+<section class=keramiker>
+<h2>{brand}</h2>
+<img src="/images/pialund.jpg" alt="">
+<h3>{navn}</h3>
+<p>{beskrivelse}</p>
+</section>
+
+<style>
+    h2, h3 {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+}
+
+.keramiker {
+    background-color: #F4EDE5;
+}
+</style>
