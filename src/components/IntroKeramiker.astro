@@ -5,8 +5,10 @@ const {brand, navn, beskrivelse} = Astro.props;
 <section class=keramiker>
 <h2>{brand}</h2>
 <img src="/images/pialund.jpg" alt="">
+<div class="text">
 <h3>{navn}</h3>
 <p>{beskrivelse}</p>
+</div>
 </section>
 
 <style>
@@ -39,5 +41,28 @@ p {
 
 .keramiker {
     background-color: #F4EDE5;
+}
+
+@media (min-width: 1000px) {
+
+.keramiker {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+img {
+    margin-left: 200px;
+}
+h2 {
+    order: 1;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
 }
 </style>
