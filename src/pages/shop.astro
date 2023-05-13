@@ -8,7 +8,18 @@ import ProduktListe from "../components/ProduktListe.astro";
 
 <Header />
 <IntroKeramiker brand="PIA LUND" navn="PIA LUND" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio."/>
+<section class="liste">
 <ProduktListe navn="SILHOUETTES LARGE" pris="DKK 1,550.00" />
 <ProduktListe navn="SILHOUETTES LARGE" pris="DKK 1,550.00" />
 <ProduktListe navn="SILHOUETTES LARGE" pris="DKK 1,550.00" />
+</section>
 <Footer />
+
+<style>
+@media (min-width: 1000px) {
+.liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+</style>
