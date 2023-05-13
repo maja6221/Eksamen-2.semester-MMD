@@ -3,7 +3,6 @@
 ---
 
 <div class="banner">
-    <img src="/images/kurser.jpg" alt="Keramik redskaber på et bord">
     <h1>KURSER</h1>
 </div>
 
@@ -14,12 +13,11 @@
 
 <style>
 .banner {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.banner img, h1 {
-    grid-column: 1/1;
+    background-image: url("/images/kurser.jpg");
+    background-size: cover;
+    height: 50vh;
+    color: white;
+    text-align: center;
 }
 
 h1 {
@@ -32,7 +30,8 @@ h2 {
     font-family: "commuters-sans", sans-serif;
     font-size: 20px;
     padding-bottom: 30px;
-    line-height: 25px;
+    padding-top: 30px;
+    line-height: 30px;
 }
 
 p {
@@ -40,13 +39,14 @@ p {
     font-size: 15px;
     padding-bottom: 25px;
     font-weight: bold;
-    line-height: 22px;
+    line-height: 30px;
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     max-width: 400px;
+    margin: auto;
 }
 
 </style>
