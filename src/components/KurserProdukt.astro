@@ -1,0 +1,44 @@
+---
+const {titel, pris} = Astro.props;
+---
+
+<section class="kurser">
+    <img src="/images/kurser_1.jpg" alt="">
+    <hr>
+    <h4>{titel}</h4>
+    <p>{pris}</p>
+    <hr>
+</section>
+
+<style>
+    h4 {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+hr {
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.kurser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F4EDE5;
+}
+
+</style>
