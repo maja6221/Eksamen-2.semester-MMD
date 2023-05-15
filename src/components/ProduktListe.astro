@@ -1,34 +1,35 @@
 ---
-const {navn, pris} = Astro.props;
+const { navn, pris } = Astro.props;
 ---
+
 <section class="produkt">
-    <img src="/images/pia_1.jpg" alt="">
-    <h4>{navn}</h4>
-    <p>{pris}</p>
-    <button>SHOP NU</button>
-    <hr>
+  <img src="/images/pia_1.jpg" alt="" />
+  <h4>{navn}</h4>
+  <p>{pris}</p>
+  <button>SHOP NU</button>
+  <hr />
 </section>
 
 <style>
-img {
+  img {
     width: 100%;
     padding: 30px;
-    }
+  }
 
-h4 {
+  h4 {
     font-family: "commuters-sans", sans-serif;
     font-size: 20px;
     margin: 20px;
-}
+  }
 
-p {
-    font-family: 'Raleway', sans-serif;
+  p {
+    font-family: "Raleway", sans-serif;
     font-size: 15px;
     font-weight: bold;
     margin: 20px;
-}
+  }
 
-button {
+  button {
     font-family: "commuters-sans", sans-serif;
     font-size: 20px;
     margin: 20px;
@@ -37,13 +38,12 @@ button {
     background-color: #343333;
     color: white;
     padding: 10px;
-}
+  }
 
-.produkt {
+  .produkt {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
+  }
 </style>
