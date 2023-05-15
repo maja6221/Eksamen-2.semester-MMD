@@ -2,30 +2,35 @@
 <footer>
   <div class="footer_alt">
     <div class="boks1">
-      <h3>Viktoria Ceramic Studio CPH</h3>
+      <h3>VIKTORIA CERAMIC STUDIO CPH</h3>
       <p>Vesterbrogade 24B, 1620 København</p>
-      <h3 class="hours">Åbningstider:</h3>
+      <h3 class="hours">ÅBNINGSTIDER:</h3>
       <p>Onsdag - Fredag: 11:00-17:00</p>
       <p>Lørdag: 10:00-16:00</p>
     </div>
     <div class="boks2">
-      <h3>Kontakt</h3>
-      <p>Mails bliver besvaret indenfor 48 timer i hverdagene.</p>
+      <h3>SOCIALE MEDIER</h3>
+      <div class="boks2-1">
+      <a href=""><img class="fb" src="./images/fb.png" alt=""></a>
+      <a href=""><img class="ig" src="./images/ig.png" alt=""></a>
+      <a href=""><img class="mail" src="./images/mail.png" alt=""></a>
+      <a href=""><img class="linked" src="./images/li.png" alt=""></a>
+    </div>
     </div>
     <div class="boks3">
-      <h3>Hjælp</h3>
+      <h3>HJÆLP</h3>
       <p>Returpolitik</p>
       <p>Servicevilkår</p>
       <p>Fortrolighedspolitik</p>
     </div>
     <div class="boks4">
-      <h3>Tilmeld dig vores nyhedsbrev</h3>
+      <h3>TILMELD DIG VORES NYHEDSBREV</h3>
       <div class="inputs">
         
           <input class="email" type="text" placeholder="Email Addresse" name="email" required />
         
         <div class="knap">
-            <a href="form.astro"><button class="sign_up">Send</button></a>
+            <a href="form.astro"><button class="sign_up">SEND</button></a>
         </div>
       </div>
     </div>
@@ -123,7 +128,7 @@
   }
 
   .boks4 {
-    margin-inline: 3%;
+    margin-inline: 0%;
   }
 
   .boks3 {
@@ -132,6 +137,32 @@
 
   .boks2 {
     margin-inline: 20%;
+   
+  }
+
+  .boks2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 20px;
+    gap: 20px;
+    
+  }
+
+  .fb {
+    width: 50%;
+  }
+
+  .ig {
+    width: 50%;
+  }
+
+  .mail {
+    width: 50%;
+  }
+
+  .linked {
+    width: 50%;
   }
 
   .img1 {
@@ -182,10 +213,11 @@
   @media (max-width: 600px) {
     .footer_alt {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       margin-left: 3%;
       padding-top: 3%;
       padding-bottom: 3%;
+      column-gap: 50px;
     }
 
     .boks1 {
@@ -198,6 +230,32 @@
       padding-top: 30px;
       margin-inline: 3%;
     }
+
+    .boks2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 20px;
+    gap: 20px;
+    
+  }
+
+  .fb {
+    width: 50%;
+  }
+
+  .ig {
+    width: 50%;
+  }
+
+  .mail {
+    width: 50%;
+  }
+
+  .linked {
+    width: 50%;
+  }
+
 
     .boks3 {
       padding-bottom: 43px;
