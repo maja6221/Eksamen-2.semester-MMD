@@ -1,44 +1,63 @@
 ---
-const {titel, pris} = Astro.props;
+const { titel, pris, knap } = Astro.props;
 ---
 
 <section class="kurser">
-    <img src="/images/kurser_1.jpg" alt="">
-    <hr>
-    <h4>{titel}</h4>
-    <p>{pris}</p>
-    <hr>
+  <img src="/images/kurser_1.jpg" alt="" />
+  <hr />
+  <h4>{titel}</h4>
+  <p>{pris}</p>
+  <button>TILFØJ TIL KURV</button>
+  <hr />
 </section>
 
 <style>
-h4 {
+  h4 {
     font-family: "commuters-sans", sans-serif;
     font-size: 20px;
     margin: 20px;
-}
+  }
 
-p {
-    font-family: 'Raleway', sans-serif;
+  p {
+    font-family: "Raleway", sans-serif;
     font-size: 15px;
     font-weight: bold;
     margin: 20px;
-}
+  }
 
-hr {
+  hr {
     margin: 20px;
-}
+    margin-bottom: 12px;
+  }
 
-img {
+  img {
     width: 100%;
     height: auto;
     padding: 20px;
-}
+  }
 
-.kurser{
+  .kurser {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #F4EDE5;
-}
+    background-color: #f4ede5;
+  }
 
+  button {
+    border: none;
+    padding: 8px;
+    background-color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #f4ede5;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 4%;
+  }
+
+  button:hover {
+    background-color: whitesmoke;
+    color: #104739;
+  }
 </style>
