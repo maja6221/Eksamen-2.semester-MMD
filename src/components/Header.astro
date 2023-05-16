@@ -26,19 +26,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:wght@100;300&family=Archivo+Narrow&family=Gruppo&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300&family=Roboto+Condensed:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:wght@100;300&family=Archivo+Narrow&family=Gruppo&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/jcj6agx.css" />
     <title>Header</title>
   </head>
 </html>
 <body>
   <header id="grid_menu">
+    
     <div class="logo">
-      <a href="/"><img src="" alt="logo" /></a>
+      <a href="/"><img src="./images/logo2.png" alt="logo" /></a>
     </div>
+    
+
     <button class="toggle-btn">MENU</button>
     <nav id="header-nav">
       <ul class="nav-menu kategorier">
@@ -172,7 +172,6 @@
       width: 20%;
       grid-column: 3;
       cursor: pointer;
-      
     }
 
     .flag {
@@ -187,6 +186,19 @@
       font-family: "commuters-sans", sans-serif;
     }
 
+    .logo {
+      width: 12%;
+      display: flex;
+      align-items: center;
+    }
+    .toggle-btn {
+      display: none;
+    }
+
+    #grid_menu {
+      align-items: center;
+    }
+
     @media (max-width: 600px) {
       .kategorier {
         margin-left: 7.5%;
@@ -194,13 +206,6 @@
         padding: 10px;
         padding-top: 4px;
       }
-    }
-
-    .toggle-btn {
-      display: none;
-    }
-
-    @media (max-width: 600px) {
       .toggle-btn {
         background: transparent;
         border: none;
