@@ -36,21 +36,99 @@
 <style>
 
 main {
+    margin-inline: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+    .name {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 10px;
+      color: #e6536d;
+    }
+
+    .form-felt1 {
+      grid-column: 1;
+      padding-right: 10px;
+      padding-bottom: 15px;
+    }
+
+    .form-felt2 {
+      grid-column: 2;
+
+      padding-bottom: 15px;
+    }
+
+    .navn {
+      grid-column: 1;
+      grid-row: 1;
+      font-family: "commuters-sans", sans-serif;
+    }
+
+    .efternavn {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    form {
+      display: grid;
+      width: 100%;
+      gap: 0.5em;
+      margin-top: 10%;
+    }
+
+    .form-felt {
+      display: grid;
+      gap: 5px;
+      padding-bottom: 15px;
+    }
+
+    .form-felt2 {
+      align-self: center;
+    }
+
+    .formGap {
+      gap: 1em;
+    }
+
+    #email {
+      padding: 10px;
+      padding-right: 10%;
+    }
+
+    .email {
+      color:#104739;
+      font-family: "commuters-sans", sans-serif;
+      
+    }
+
+    .knap {
+      background-color: white;
+      border: 0.5px solid black;
+      color: black;
+      font-family: "commuters-sans", sans-serif;
+      padding: 8px;
+      border-radius: 5px;
+      font-size: unset;
+    }
+
+    .knap:hover {
+      color: white;
+      background-color: black;
+    }
+
+
+
+  @media (min-width: 1000px) {
+
+
+    main {
   margin-inline: 15%;
   margin-top: 5%;
   margin-bottom: 10%;
   
 }
-
-@media (max-width: 600px) {
-  main {
-    margin-inline: 15%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  
-}
-
  
  .hr1 {
     margin-bottom: 2%;
@@ -147,86 +225,6 @@ main {
     background-color: black;
   }
 
-
-
-  @media (max-width: 600px) {
-    .name {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      gap: 10px;
-      color: #e6536d;
-    }
-
-    .form-felt1 {
-      grid-column: 1;
-      padding-right: 10px;
-      padding-bottom: 15px;
-    }
-
-    .form-felt2 {
-      grid-column: 2;
-
-      padding-bottom: 15px;
-    }
-
-    .navn {
-      grid-column: 1;
-      grid-row: 1;
-      font-family: "commuters-sans", sans-serif;
-    }
-
-    .efternavn {
-      grid-column: 2;
-      grid-row: 1;
-    }
-
-    form {
-      display: grid;
-      width: 100%;
-      gap: 0.5em;
-      margin-top: 10%;
-    }
-
-    .form-felt {
-      display: grid;
-      gap: 5px;
-      padding-bottom: 15px;
-    }
-
-    .form-felt2 {
-      align-self: center;
-    }
-
-    .formGap {
-      gap: 1em;
-    }
-
-    #email {
-      padding: 10px;
-      padding-right: 10%;
-    }
-
-    .email {
-      color:#104739;
-      font-family: "commuters-sans", sans-serif;
-      
-    }
-
-    .knap {
-      background-color: white;
-      border: 0.5px solid black;
-      color: black;
-      font-family: "commuters-sans", sans-serif;
-      padding: 8px;
-      border-radius: 5px;
-      font-size: unset;
-    }
-
-    .knap:hover {
-      color: white;
-      background-color: black;
-    }
   }
 
 </style>
