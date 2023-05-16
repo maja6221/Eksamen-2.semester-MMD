@@ -26,16 +26,17 @@ import Lokation from  "../components/Lokation.astro";
 
 <style>
 
+    
     .div1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    @media (min-width: 1000px) {
+        .div1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    @media (max-width: 600px) {
-        .div1 {
-        display: grid;
-        grid-template-columns: 1fr;
-    } 
     }
 
 </style>
