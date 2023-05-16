@@ -1,35 +1,30 @@
 <main>
-<h1>VÆRKSTED OG BUTIK</h1>
+  <h1>VÆRKSTED OG BUTIK</h1>
 
-<div class="grid">
-  <div class="div1">
-    <h2>HER FINDER DU HÅNDLAVET KERAMIK I KØBENHAVN</h2>
-    <p>Værkstedsbutikken ligger gemt i en baggård i hjertet af Vesterbro i København. Her finder du et 400 m2 stort, atmosfæreflydt keramikværksted og butik, hvor der bliver lavet og solgt håndlavet keramik. Alle keramiske produkter i butikken er håndlavet på stedet.</p>
-    <p>I butikken kan du møde de keramiske designere, se deres keramik og få fingrene i nogle af deres smukke kreationer.</p>
+  <div class="grid">
+    <div class="div1">
+      <h2>HER FINDER DU HÅNDLAVET KERAMIK I KØBENHAVN</h2>
+      <p>Værkstedsbutikken ligger gemt i en baggård i hjertet af Vesterbro i København. Her finder du et 400 m2 stort, atmosfæreflydt keramikværksted og butik, hvor der bliver lavet og solgt håndlavet keramik. Alle keramiske produkter i butikken er håndlavet på stedet.</p>
+      <p>I butikken kan du møde de keramiske designere, se deres keramik og få fingrene i nogle af deres smukke kreationer.</p>
+    </div>
+    <div class="div2">
+      <p>Butikkens udvalg strækker sig over brugskunst og design af høj kvalitet og eksklusive kunstobjekter i ler, til delikate keramiske smykker. Alle produkter er “made in Copenhagen” og har deres egen historie, og reflekterer designernes personlige stil og teknikker.</p>
+      <p>På hylderne er der bland andet at finde keramik krus, kopper, skåle, tallerkener og vaser. Når du køber keramik fra Viktoria Ceramic Studio, køber du et unikt stykke håndværk.</p>
+    </div>
   </div>
-  <div class="div2">
-    <p>Butikkens udvalg strækker sig over brugskunst og design af høj kvalitet og eksklusive kunstobjekter i ler, til delikate keramiske smykker. Alle produkter er “made in Copenhagen” og har deres egen historie, og reflekterer designernes personlige stil og teknikker.</p>
-    <p>På hylderne er der bland andet at finde keramik krus, kopper, skåle, tallerkener og vaser. Når du køber keramik fra Viktoria Ceramic Studio, køber du et unikt stykke håndværk.</p>
-  </div>
-</div>
 </main>
 
 <style>
-
-main {
-  margin-inline: 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-@media (max-width: 600px) {
   main {
     margin-inline: 15%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
-  
-}
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   h1 {
     font-family: "commuters-sans", sans-serif;
     font-size: 29px;
@@ -49,24 +44,18 @@ main {
     line-height: 1.5em;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-  }
-
   .div1 {
-    padding-right: 20px;
+    padding-right: 0px;
   }
   .div2 {
-    padding-left: 20px;
+    padding-left: 0px;
   }
 
-
-  @media (max-width: 600px) {
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
+  @media (min-width: 1000px) {
+    main {
+      margin-inline: 15%;
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
     h1 {
       font-family: "commuters-sans", sans-serif;
@@ -87,12 +76,16 @@ main {
       line-height: 1.5em;
     }
 
-    .div1 {
-    padding-right: 0px;
-  }
-  .div2 {
-    padding-left: 0px;
-  }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
+    .div1 {
+      padding-right: 20px;
+    }
+    .div2 {
+      padding-left: 20px;
+    }
   }
 </style>
