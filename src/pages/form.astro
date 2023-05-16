@@ -7,3 +7,174 @@ import Header from "../components/Header.astro";
 <Header />
 
 <Footer />
+
+
+
+
+<style>
+
+.main {
+  margin-inline: 14%;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+
+.grid_opacity {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  .grid {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr;
+  
+}
+
+#helle {
+        grid-column: 1 / span 1.5;
+        grid
+    }
+
+.container {
+  position: relative;
+  width: 100%;
+  padding-inline: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgba(255, 255, 255, 0.679);
+  
+  font-size: 16px;
+  padding: 16px 40px;
+  white-space: nowrap;
+  font-family: "commuters-sans", sans-serif;
+ 
+}
+
+.txt1 {
+    text-decoration: none;
+    color: black;
+}
+.txt1:hover {
+    text-decoration: none;
+    color: palevioletred;
+}
+
+@media (min-width: 1000px) {
+
+  .main {
+    margin-inline: 10%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+  }
+  
+  #helle {
+        grid-column: 1 / span 1.5;
+        grid
+    }
+
+.container {
+  position: relative;
+  width: 100%;
+  padding-inline: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgba(255, 255, 255, 0.679);
+  
+  font-size: 16px;
+  padding: 16px 40px;
+  white-space: nowrap;
+  font-family: "commuters-sans", sans-serif;
+ 
+}
+
+.txt1 {
+    text-decoration: none;
+    color: black;
+}
+.txt1:hover {
+    text-decoration: none;
+    color: palevioletred;
+}
+
+
+
+.grid_opacity {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr ;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr;
+
+}
+
+  
+}
+</style>
