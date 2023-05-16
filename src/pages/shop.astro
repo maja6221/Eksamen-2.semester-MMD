@@ -6,20 +6,36 @@ import IntroKeramiker from "../components/IntroKeramiker.astro";
 import ProduktListe from "../components/ProduktListe.astro";
 import IndexDesignere from "../components/IndexDesignere.astro";
 import Keramikere from "../components/Keramikere.astro";
-import ShopProdukter from "../components/ShopProdukter.astro";
+
+
+
+
+
+
+const url = "https://yetmrunotjrgzgmcchxy.supabase.co/rest/v1/shop";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlldG1ydW5vdGpyZ3pnbWNjaHh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3MjE2MjksImV4cCI6MTk5NDI5NzYyOX0.3nyW3iCZSlvah2mVwALnccNLM39VwIq4g5xXUpR9L5g";
+
+
+const response = await fetch(url, {
+  method: "GET",
+  headers: {
+    apikey: key,
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+});
+
+const udsagn = await response.json();
+
 ---
 
 <Header />
 <Keramikere />
 <IndexDesignere />
 <IntroKeramiker brand="PIA LUND" navn="PIA LUND" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
-<section class="liste">
-  <ProduktListe navn="SILHOUETTES LARGE" pris="DKK 1,550.00" />
-  <ProduktListe navn="SILHOUETTES LARGE" pris="DKK 1,550.00" />
-  <ProduktListe navn="SILHOUETTES LARGE" pris="DKK 1,550.00" />
-</section>
 
-<ShopProdukter />
+
+
 
 <Footer />
 
