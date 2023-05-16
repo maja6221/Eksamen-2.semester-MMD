@@ -1,66 +1,54 @@
 <main>
-<div class="grid"><a href="kurser"><button>  SE ALLE KERAMIK KURSER HER</button></a> </div>
+  <div class="grid"><a href="kurser"><button> SE ALLE KERAMIK KURSER HER</button></a></div>
 </main>
 <style>
-
-main {
-  margin-inline: 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-@media (max-width: 600px) {
   main {
     margin-inline: 15%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
-  
-}
 
-button {
+  button {
+    border: none;
+    padding: 20px;
+    background-color: #104739;
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+    color: #f4ede5;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: whitesmoke;
+    color: #104739;
+  }
+  @media (min-width: 1000px) {
+    main {
+      margin-inline: 15%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    button {
       border: none;
       padding: 20px;
       background-color: #104739;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
       font-size: 17px;
       border-radius: 5px;
-      color:#F4EDE5;
+      color: #f4ede5;
       cursor: pointer;
-     justify-items: center;
-      
-      
+      justify-items: center;
     }
-  
-    button:hover{
+
+    button:hover {
       background-color: whitesmoke;
       color: #104739;
     }
 
     .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    
-    
-    }
-  @media (max-width: 600px) {
-    button {
-      border: none;
-      padding: 20px;
-      background-color: #104739;
-      font-family: 'Raleway', sans-serif;
-      font-size: 17px;
-      border-radius: 5px;
-      color:#F4EDE5;
-      cursor: pointer;
-      
-    }
-  
-    button:hover{
-      background-color: whitesmoke;
-      color: #104739;
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
-
-
 </style>
