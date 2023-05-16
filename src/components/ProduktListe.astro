@@ -1,14 +1,39 @@
 ---
-const { navn, pris } = Astro.props;
----
+const { designer, pris, overskrift, image, tekst } = Astro.props;
 
+
+const url = "https://yetmrunotjrgzgmcchxy.supabase.co/rest/v1/shop";
+
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlldG1ydW5vdGpyZ3pnbWNjaHh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3MjE2MjksImV4cCI6MTk5NDI5NzYyOX0.3nyW3iCZSlvah2mVwALnccNLM39VwIq4g5xXUpR9L5g",
+  },
+};
+
+
+function hentData() {
+  fetch(url)
+  .then((respons) => respons.json())
+  .then(visProdukt);
+}
+
+
+function visProdukt(shop) {
+  console.log(shop);
+  document.querySelector(".overskrift").textContent = shop.overskrift;
+}
+// const response = await fetch(url, options);
+// const data = await response.json();
+
+---
+<!-- 
 <section class="produkt">
   <img src="/images/pia_1.jpg" alt="" />
   <h4>{navn}</h4>
   <p>{pris}</p>
   <button>SHOP NU</button>
   <hr />
-</section>
+</section> -->
 
 <style>
   img {
