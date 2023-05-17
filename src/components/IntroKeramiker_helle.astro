@@ -1,0 +1,106 @@
+---
+const { brand, navn, beskrivelse } = Astro.props;
+---
+
+<section id="keramiker3">
+  <img src="/images/pialund.jpg" alt="" />
+  <div class="Helle">
+    <h2>{brand}</h2>
+    <div class="text">
+      <h3>{navn}</h3>
+      <p>{beskrivelse}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  h2 {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 40px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  p {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: 6%;
+  }
+
+  #keramiker3 {
+    background-color: #f4ede5;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  section {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+
+
+
+  @media (min-width: 1000px) {
+    #keramiker3 {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    img {
+      margin-left: 200px;
+    }
+    h2 {
+      order: 1;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    p {
+      margin-left: 20%;
+    }
+
+    h2 {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 40px;
+      padding-bottom: 30px;
+      padding-top: 90px;
+      line-height: 30px;
+      margin-left: 8%;
+    }
+
+    h3 {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 20px;
+      padding-bottom: 30px;
+      padding-top: 15px;
+      line-height: 30px;
+      margin-left: 13%;
+    }
+
+    section {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+  }
+</style>

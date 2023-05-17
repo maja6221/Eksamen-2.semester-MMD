@@ -2,9 +2,9 @@
 const { brand, navn, beskrivelse } = Astro.props;
 ---
 
-<section class="keramiker">
+<section id="keramiker1">
   <img src="/images/pialund.jpg" alt="" />
-  <div class="pia">
+  <div class="clayform">
     <h2>{brand}</h2>
     <div class="text">
       <h3>{navn}</h3>
@@ -41,7 +41,7 @@ const { brand, navn, beskrivelse } = Astro.props;
     margin-left: 6%;
   }
 
-  .keramiker {
+  #keramiker1 {
     background-color: #f4ede5;
   }
 
@@ -49,13 +49,21 @@ const { brand, navn, beskrivelse } = Astro.props;
     width: 100%;
   }
 
+  section {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+
+
+
   @media (min-width: 1000px) {
-    .keramiker {
+    #keramiker1 {
       display: grid;
       grid-template-columns: 1fr 2fr;
     }
     img {
       margin-left: 200px;
+      width: 100%;
     }
     h2 {
       order: 1;
@@ -89,6 +97,11 @@ const { brand, navn, beskrivelse } = Astro.props;
       padding-top: 15px;
       line-height: 30px;
       margin-left: 13%;
+    }
+
+    section {
+      margin-bottom: 40px;
+      margin-top: 40px;
     }
   }
 </style>

@@ -2,7 +2,11 @@
 import Footer from "../components/Footer.astro";
 import "../style/mutual.css";
 import Header from "../components/Header.astro";
-import IntroKeramiker from "../components/IntroKeramiker.astro";
+import IntroKeramiker_pia from "../components/IntroKeramiker_pia.astro";
+import IntroKeramiker_clayform from "../components/IntroKeramiker_clayform.astro";
+import IntroKeramiker_clibklap from "../components/IntroKeramiker_clibklap.astro";
+import IntroKeramiker_helle from "../components/IntroKeramiker_helle.astro";
+import IntroKeramiker_mark from "../components/IntroKeramiker_mark.astro";
 import ProduktListe from "../components/ProduktListe.astro";
 import IndexDesignere from "../components/IndexDesignere.astro";
 import Keramikere from "../components/Keramikere.astro";
@@ -33,7 +37,7 @@ const alleProdukter = await response.json();
 
 const Mark = alleProdukter.filter((produkter) => produkter.designer == "Mark Lauberg");
 const Pia = alleProdukter.filter((produkter) => produkter.designer == "Pia Lund");
-const ClipKlap = alleProdukter.filter((produkter) => produkter.designer == "ClipKlap");
+const ClibKlap = alleProdukter.filter((produkter) => produkter.designer == "ClibKlap");
 const Helle = alleProdukter.filter((produkter) => produkter.designer == "Helle Hansen");
 const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clayform");
 ---
@@ -41,13 +45,18 @@ const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clay
 <Header />
 <Keramikere />
 <IndexDesignere />
-<IntroKeramiker brand="PIA LUND" navn="PIA LUND" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
+
 
 <main>
+  <IntroKeramiker_mark brand="MARK LAUBERG" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
   <ProduktListe indhold={Mark} filter="Mark Lauberg" />
+  <IntroKeramiker_pia brand="PIA LUND" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
   <ProduktListe indhold={Pia} filter="Pia Lund" />
-  <ProduktListe indhold={ClipKlap} filter="ClipKlap" />
+  <IntroKeramiker_clibklap brand="CLIBKLAP" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
+  <ProduktListe indhold={ClibKlap} filter="ClibKlap" />
+  <IntroKeramiker_helle brand="HELLE HANSEN" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
   <ProduktListe indhold={Helle} filter="Helle Hansen" />
+  <IntroKeramiker_clayform brand="CLAYFORM" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
   <ProduktListe indhold={Clayform} filter="Clayform" />
   <!-- {Andre.length > 0 && <Sektion indhold={Andre} filter="Andre" />} -->
 </main>
@@ -55,9 +64,7 @@ const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clay
 <Footer />
 
 <style>
-  main {
-    padding: 1em;
-  }
+ 
 
   @media (min-width: 1000px) {
     .liste {
