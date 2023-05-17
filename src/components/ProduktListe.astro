@@ -1,12 +1,13 @@
 ---
-const { designer, pris, overskrift, image, tekst, produkter, indhold, filter } = Astro.props;
+const {indhold} = Astro.props;
 import Produktkort from "../components/Produktkort.astro";
+import { Debug } from "astro/components";
 
 ---
 
 
 <section>
-  {
+  <!-- {
     indhold.map((produkter) => (
       <Produktkort
         aktiv={produkter.aktiv}
@@ -18,7 +19,8 @@ import Produktkort from "../components/Produktkort.astro";
         tekst={produkter.tekst}
       />
     ))
-  }
+  } -->
+  <Debug {indhold} />
 </section>
 
 

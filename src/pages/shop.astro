@@ -6,13 +6,10 @@ import IntroKeramiker from "../components/IntroKeramiker.astro";
 import ProduktListe from "../components/ProduktListe.astro";
 import IndexDesignere from "../components/IndexDesignere.astro";
 import Keramikere from "../components/Keramikere.astro";
-import {Debug} from "astro/components";
+import { Debug } from "astro/components";
 import Produktkort from "../components/Produktkort.astro";
 
-
-
 const url = "https://yetmrunotjrgzgmcchxy.supabase.co/rest/v1/shop";
-
 
 const options = {
   headers: {
@@ -31,17 +28,14 @@ const options = {
 
 // const produkter = await response.json();
 
-
 const response = await fetch(url, options);
 const alleProdukter = await response.json();
 
-const Mark = alleProdukter.filter((produkter) => produkter.designer == 1);
+const Mark = alleProdukter.filter((produkter) => produkter.designer == "Mark");
 const Pia = alleProdukter.filter((produkter) => produkter.designer == 2);
-const Clipklap = alleProdukter.filter((produkter) => produkter.designer == 3);
+const ClipKlap = alleProdukter.filter((produkter) => produkter.designer == 3);
 const Helle = alleProdukter.filter((produkter) => produkter.designer == 3);
-const Clayform = alleProdukter.filter((produkter) => produkter.designer == 3);
-
-
+const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clayform");
 ---
 
 <Header />
@@ -49,15 +43,22 @@ const Clayform = alleProdukter.filter((produkter) => produkter.designer == 3);
 <IndexDesignere />
 <IntroKeramiker brand="PIA LUND" navn="PIA LUND" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
 
-<ProduktListe />
-
+<main>
+  <ProduktListe indhold={Mark} filter="Mark Lauberg" />
+  <ProduktListe indhold={Pia} filter="Pia Lund" />
+  <ProduktListe indhold={ClipKlap} filter="ClipKlap" />
+  <ProduktListe indhold={Helle} filter="Helle Hansen" />
+  <ProduktListe indhold={Clayform} filter="Clayform" />
+  <!-- {Andre.length > 0 && <Sektion indhold={Andre} filter="Andre" />} -->
+</main>
 
 <Footer />
 
-<Debug {produkter} />
-
-
 <style>
+  main {
+    padding: 1em;
+  }
+
   @media (min-width: 1000px) {
     .liste {
       display: grid;
