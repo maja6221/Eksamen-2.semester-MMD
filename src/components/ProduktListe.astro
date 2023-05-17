@@ -15,7 +15,7 @@ const { navn, designer, pris, overskrift, image, tekst } = Astro.props;
 // function visProdukt(shop) {
 //   console.log(shop);
 //   document.querySelector(".overskrift").textContent = shop.overskrift;
-}
+// }
 // const response = await fetch(url, options);
 // const data = await response.json();
 
@@ -39,6 +39,9 @@ const { navn, designer, pris, overskrift, image, tekst } = Astro.props;
 </section> -->
 
 <article class="testimonial-container">
+  {
+    indhold.map(())
+  }
     
   <div class="border">
     <h2 class="overskrift">{overskrift}</h2>
