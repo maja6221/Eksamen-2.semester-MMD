@@ -4,7 +4,9 @@
     <h1 class="overskriftp1">Navn på produktet</h1>
     <h2 class="overskriftp2">CLAYFORM</h2>
     <h3 class="overskriftp3">Prisen</h3>
-    <h3 class="overskriftp4">Mangler noget her</h3>
+    <div>
+      <p>- 1 +</p>
+    </div>
     <button>Tilføj til kurv</button>
   </div>
 </div>
@@ -19,6 +21,19 @@
   img {
     width: 100%;
     height: auto;
+  }
+
+  p {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 18px;
+    margin-left: 30%;
+    border-style: solid;
+    border-color: black;
+    width: 18%;
+    letter-spacing: 12px;
+    padding-left: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
   /* til siden produkt */
   .grid_1-1 {
@@ -69,6 +84,7 @@
     background-color: #343333;
     color: white;
     padding: 10px;
+    margin-top: 20px;
   }
 
   /* sat siden ind i media så det er responsitv- altså også fungerer i mobil størrelse */
@@ -84,16 +100,41 @@
     }
 
     .overskriftp1 {
-      font-size: 17px;
-      padding-top: 50px;
+      font-size: 21px;
+      padding-top: 40px;
+      margin-left: 15%;
     }
 
     .overskriftp2 {
       padding-top: 36px;
+      margin-left: 30%;
+      padding-bottom: 5px;
+    }
+
+    .overskriftp3 {
+      margin-left: 38%;
+      padding-bottom: 20px;
     }
 
     .menu {
       display: block;
+    }
+
+    button {
+      margin-left: 16%;
+    }
+
+    p {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 18px;
+      margin-left: 29%;
+      border-style: solid;
+      border-color: black;
+      width: 40%;
+      letter-spacing: 12px;
+      padding-left: 12px;
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
   }
 </style>
