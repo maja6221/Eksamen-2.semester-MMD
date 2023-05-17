@@ -31,10 +31,10 @@ const options = {
 const response = await fetch(url, options);
 const alleProdukter = await response.json();
 
-const Mark = alleProdukter.filter((produkter) => produkter.designer == "Mark");
-const Pia = alleProdukter.filter((produkter) => produkter.designer == 2);
-const ClipKlap = alleProdukter.filter((produkter) => produkter.designer == 3);
-const Helle = alleProdukter.filter((produkter) => produkter.designer == 3);
+const Mark = alleProdukter.filter((produkter) => produkter.designer == "Mark Lauberg");
+const Pia = alleProdukter.filter((produkter) => produkter.designer == "Pia Lund");
+const ClipKlap = alleProdukter.filter((produkter) => produkter.designer == "ClipKlap");
+const Helle = alleProdukter.filter((produkter) => produkter.designer == "Helle Hansen");
 const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clayform");
 ---
 
