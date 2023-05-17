@@ -6,6 +6,7 @@ import IntroKeramiker from "../components/IntroKeramiker.astro";
 import ProduktListe from "../components/ProduktListe.astro";
 import IndexDesignere from "../components/IndexDesignere.astro";
 import Keramikere from "../components/Keramikere.astro";
+import {Debug} from "astro/components";
 
 
 
@@ -25,7 +26,7 @@ const response = await fetch(url, {
   },
 });
 
-const udsagn = await response.json();
+const produkter = await response.json();
 
 ---
 
@@ -34,10 +35,13 @@ const udsagn = await response.json();
 <IndexDesignere />
 <IntroKeramiker brand="PIA LUND" navn="PIA LUND" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
 
-
+<ProduktListe />
 
 
 <Footer />
+
+<Debug {produkter} />
+
 
 <style>
   @media (min-width: 1000px) {
