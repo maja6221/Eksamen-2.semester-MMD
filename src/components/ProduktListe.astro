@@ -1,55 +1,26 @@
 ---
-const { navn, designer, pris, overskrift, image, tekst } = Astro.props;
-
-
-
-
-
-// function hentData() {
-//   fetch(url)
-//   .then((respons) => respons.json())
-//   .then(visProdukt);
-// }
-
-
-// function visProdukt(shop) {
-//   console.log(shop);
-//   document.querySelector(".overskrift").textContent = shop.overskrift;
-// }
-// const response = await fetch(url, options);
-// const data = await response.json();
+const { designer, pris, overskrift, image, tekst, produkter, indhold, filter } = Astro.props;
+import Produktkort from "../components/Produktkort.astro";
 
 ---
 
-<!-- <section class="produkt">
-  <img src="/images/pia_1.jpg" alt="" />
-  <h4>{navn}</h4>
-  <p>{pris}</p>
-  <button>SHOP NU</button>
-  <hr />
-</section> -->
 
-<!-- <section>
-  <img src="./produkt_billeder/pialund1.webp" alt="">
-  <h2>{overskrift}</h2>
-  <h3>{designer}</h3>
-  <h4>{pris}</h4>
-  <button>SHOP NU</button>
-  <hr />
-</section> -->
-
-<article class="testimonial-container">
+<section>
   {
-    indhold.map(())
+    indhold.map((produkter) => (
+      <Produktkort
+        aktiv={produkter.aktiv}
+        link={"/personer/" + produkter.slug}
+        produktbillede={`/thumbs/${produkter.image}`}
+        overskrift={produkter.overskrift}
+        designer={produkter.designer}
+        pris={produkter.pris}
+        tekst={produkter.tekst}
+      />
+    ))
   }
-    
-  <div class="border">
-    <h2 class="overskrift">{overskrift}</h2>
-    <p>{designer}</p>
-    <h3>{pris}</h3>
-  </div>
-       
-</article>
+</section>
+
 
 <style>
   img {

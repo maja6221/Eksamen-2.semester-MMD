@@ -1,0 +1,12 @@
+---
+const { image, overskrift, link, aktiv } = Astro.props;
+---
+
+<a href={link}>
+  <article class={aktiv || "inaktiv"}>
+    <img src={image} alt="produktbillede" />
+    <div>
+      <h2>{overskrift}</h2>
+    </div>
+  </article>
+</a>
