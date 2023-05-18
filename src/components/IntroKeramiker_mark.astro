@@ -13,8 +13,8 @@ const { brand, navn, beskrivelse } = Astro.props;
         dag laver han også kunsthåndværk med et nordisk og minimalistisk udtryk. Imidlertid er glæden ved modellering og et bankende hjerte for detaljer og form stadig reflekteret i Marks seneste produkt: Spirallysestagen.
       </p>
       <div class="socialemedier">
-        <a href="https://www.instagram.com/marklauberg/">Instagram</a>
-        <a href="mailto:marklauberg@gmail.com">Kontakt</a>
+        <a href="https://www.instagram.com/marklauberg/">INSTAGRAM</a>
+        <a href="mailto:marklauberg@gmail.com">KONTAKT</a>
       </div>
     </div>
   </div>
@@ -23,6 +23,25 @@ const { brand, navn, beskrivelse } = Astro.props;
 </section>
 
 <style>
+
+  .socialemedier {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    margin-inline: 10%;
+    
+    
+  }
+
+  a {
+    color: palevioletred;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+ 
   h2 {
     font-family: "commuters-sans", sans-serif;
     font-size: 40px;
@@ -47,16 +66,13 @@ const { brand, navn, beskrivelse } = Astro.props;
     padding-bottom: 25px;
     font-weight: bold;
     line-height: 30px;
-<<<<<<< HEAD
-    margin-inline: 6%;
-=======
-    margin-left: 3%;
->>>>>>> e9dc717473a9acb982bf4638f3f76fb7b1dc1b07
+    margin-inline: 10%;
   }
 
   
   #keramiker4 {
     background-color: #f4ede5;
+    padding-bottom: 20px;
   }
 
   img {
@@ -68,10 +84,20 @@ const { brand, navn, beskrivelse } = Astro.props;
     margin-top: 40px;
   }
 
+  
+
   @media (min-width: 1000px) {
+
+    .socialemedier {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    
+  }
     #keramiker4 {
       display: grid;
       grid-template-columns: 1fr 2fr;
+      padding-bottom: 0px;
     }
     img {
       margin-left: 200px;
