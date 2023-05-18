@@ -32,6 +32,7 @@ const { shop } = Astro.props;
     <img src={shop.image} alt="" />
     <h2 class="overskrift">{shop.overskrift}</h2>
     <h3 class="designer">{shop.designer}</h3>
+    <h4 class="pris">{shop.pris} DKK</h4>
     <div class="tekst">
       <p>{shop.tekst}</p>
     </div>
@@ -102,6 +103,13 @@ const { shop } = Astro.props;
       color: white;
       padding: 10px;
       margin-top: 20px;
+    }
+
+    .pris {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 14px;
+      margin-left: 15%;
+      padding-top: 18px;
     }
   }
 </style>
