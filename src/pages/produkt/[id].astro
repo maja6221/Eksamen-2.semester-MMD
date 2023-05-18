@@ -1,6 +1,7 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import "../../style/mutual.css";
 
 export async function getStaticPaths() {
   const url = "https://yetmrunotjrgzgmcchxy.supabase.co/rest/v1/shop";
@@ -23,11 +24,84 @@ export async function getStaticPaths() {
 const { shop } = Astro.props;
 ---
 
-<img class="billede" src={`./produkt_billeder/${shop.image}`} alt="" />
+<Header />
 
-<img src={shop.image} alt="" />
-<p class="p_pop">Overskrift: {shop.overskrift}</p>
-<p class="p_pop">Designer: {shop.designer}</p>
-<div class="tekst">
-  <p>Beskrivelse: {shop.tekst}</p>
+<div class="grid_singleview">
+  <img class="billede" src={`/produkt_billeder/${shop.image}`} alt="" />
+  <div>
+    <img src={shop.image} alt="" />
+    <h2 class="overskrift">{shop.overskrift}</h2>
+    <h3 class="designer">{shop.designer}</h3>
+    <div class="tekst">
+      <p>{shop.tekst}</p>
+    </div>
+    <div>
+      <p class="plus">- 1 +</p>
+    </div>
+    <button>Tilføj til kurv</button>
+  </div>
 </div>
+
+<Footer />
+
+<style>
+  @media (min-width: 1000px) {
+    .grid_singleview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .billede {
+      width: 100%;
+      padding: 30px;
+      margin-left: 10%;
+    }
+
+    .overskrift {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 26px;
+      padding-top: 50px;
+      margin-left: 15%;
+    }
+
+    .designer {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 20px;
+      padding-top: 22px;
+      margin-left: 15%;
+    }
+
+    .tekst {
+      font-family: "Raleway", sans-serif;
+      line-height: 1.5em;
+      font-size: 15px;
+      padding-top: 20px;
+      padding-bottom: 24px;
+      margin-left: 15%;
+    }
+
+    .plus {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 16px;
+      margin-left: 15%;
+      border-style: solid;
+      border-color: #a9a9a9;
+      width: 18%;
+      letter-spacing: 12px;
+      padding-left: 20px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+    button {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 15px;
+      margin-left: 15%;
+      width: 200px;
+      border: none;
+      background-color: #343333;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  }
+</style>
