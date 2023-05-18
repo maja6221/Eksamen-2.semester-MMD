@@ -1,0 +1,33 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+export async function getStaticPaths() {
+  const url = "https://yetmrunotjrgzgmcchxy.supabase.co/rest/v1/shop";
+
+  const options = {
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlldG1ydW5vdGpyZ3pnbWNjaHh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3MjE2MjksImV4cCI6MTk5NDI5NzYyOX0.3nyW3iCZSlvah2mVwALnccNLM39VwIq4g5xXUpR9L5g",
+    },
+  };
+
+  const response = await fetch(url, options);
+  const data = await response.json();
+
+  return data.map((shop) => ({
+    params: { id: shop.id },
+    props: { shop },
+  }));
+}
+
+const { shop } = Astro.props;
+---
+
+<img class="billede" src={`./produkt_billeder/${shop.image}`} alt="" />
+
+<img src={shop.image} alt="" />
+<p class="p_pop">Overskrift: {shop.overskrift}</p>
+<p class="p_pop">Designer: {shop.designer}</p>
+<div class="tekst">
+  <p>Beskrivelse: {shop.tekst}</p>
+</div>
