@@ -1,31 +1,16 @@
 ---
-const {indhold} = Astro.props;
+const { indhold } = Astro.props;
 import Produktkort from "../components/Produktkort.astro";
 import { Debug } from "astro/components";
-
 ---
-
 
 <section>
   {
     indhold.map((produkter) => (
-      <Produktkort
-        aktiv={produkter.aktiv}
-        link={"/personer/" + produkter.slug}
-        image={`./produkt_billeder/${produkter.image}`}
-        overskrift={produkter.overskrift}
-        designer={produkter.designer}
-        pris={produkter.pris}
-        tekst={produkter.tekst}
-        
-      />
+      <Produktkort aktiv={produkter.aktiv} link={"/personer/" + produkter.slug} image={`./produkt_billeder/${produkter.image}`} overskrift={produkter.overskrift} designer={produkter.designer} pris={produkter.pris} tekst={produkter.tekst} />
     ))
-    
   }
-  
-  
 </section>
-
 
 <style>
   img {
@@ -46,7 +31,6 @@ import { Debug } from "astro/components";
     margin: 20px;
   }
 
- 
   .produkt {
     display: flex;
     flex-direction: column;
@@ -54,7 +38,6 @@ import { Debug } from "astro/components";
     align-items: center;
     padding-bottom: 45px;
   }
-
 
   h2 {
     margin-top: 1.5em;
@@ -72,5 +55,3 @@ import { Debug } from "astro/components";
     }
   }
 </style>
-
- 

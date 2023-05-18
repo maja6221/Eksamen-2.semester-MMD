@@ -21,17 +21,6 @@ const options = {
   },
 };
 
-// const response = await fetch(url, {
-//   method: "GET",
-//   headers: {
-//     apikey: key,
-//     Accept: "application/json",
-//     "Content-Type": "application/json",
-//   },
-// });
-
-// const produkter = await response.json();
-
 const response = await fetch(url, options);
 const alleProdukter = await response.json();
 
@@ -72,7 +61,6 @@ const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clay
     beskrivelse="Signe Bailey er grundlægger af Clayform og medejer af Viktoria Ceramic Studio. Signe producerer unikke designobjekter, der både har et funktionelt formål og påvirker rummet omkring dem med deres æstetik."
   />
   <ProduktListe indhold={Clayform} filter="Clayform" />
-  <!-- {Andre.length > 0 && <Sektion indhold={Andre} filter="Andre" />} -->
 </main>
 
 <Footer />

@@ -32,6 +32,7 @@ const { shop } = Astro.props;
     <img src={shop.image} alt="" />
     <h2 class="overskrift">{shop.overskrift}</h2>
     <h3 class="designer">{shop.designer}</h3>
+    <h4 class="pris">{shop.pris} DKK</h4>
     <div class="tekst">
       <p>{shop.tekst}</p>
     </div>
@@ -45,6 +46,76 @@ const { shop } = Astro.props;
 <Footer />
 
 <style>
+  .grid_singleview {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 30px;
+  }
+  .billede {
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 8px;
+  }
+
+  .overskrift {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 26px;
+    margin-left: 9%;
+  }
+
+  .designer {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 20px;
+    padding-top: 18px;
+    margin-left: 9%;
+  }
+
+  .pris {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 14px;
+    margin-left: 9%;
+    padding-top: 15px;
+  }
+
+  .tekst {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5em;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    margin-left: 9%;
+  }
+
+  .plus {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 16px;
+    margin-left: 9%;
+    border-style: solid;
+    border-color: #a9a9a9;
+    width: 30%;
+    letter-spacing: 12px;
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  button {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 15px;
+    margin-left: 9%;
+    width: 200px;
+    border: none;
+    background-color: #343333;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+  }
+
+  button:hover {
+    background-color: whitesmoke;
+    color: #104739;
+  }
+
   @media (min-width: 1000px) {
     .grid_singleview {
       display: grid;
@@ -68,6 +139,13 @@ const { shop } = Astro.props;
       font-size: 20px;
       padding-top: 22px;
       margin-left: 15%;
+    }
+
+    .pris {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 14px;
+      margin-left: 15%;
+      padding-top: 18px;
     }
 
     .tekst {
@@ -102,6 +180,11 @@ const { shop } = Astro.props;
       color: white;
       padding: 10px;
       margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: whitesmoke;
+      color: #104739;
     }
   }
 </style>
