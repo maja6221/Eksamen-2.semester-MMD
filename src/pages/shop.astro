@@ -46,17 +46,31 @@ const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clay
 <Keramikere />
 <IndexDesignere />
 
-
 <main>
-  <IntroKeramiker_mark brand="MARK LAUBERG" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
+  <IntroKeramiker_mark
+    brand="MARK LAUBERG"
+    beskrivelse="Mark Lauberg har været keramiker og designer i mere end 30 år, og er medejer af keramiker fællesskabet Viktoria Ceramic Studio. I dag laver han bl.a. kunsthåndværk med et nordisk og minimalistisk udtryk"
+  />
   <ProduktListe indhold={Mark} filter="Mark Lauberg" />
-  <IntroKeramiker_pia brand="PIA LUND" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
+  <IntroKeramiker_pia
+    brand="PIA LUND"
+    beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio. Udtrykket i Pia Lunds arbejde er nordisk og æstetisk. Hun udfører håndværk af høj kvalitet, smukke farvekombinationer og et sanseligt formsprog."
+  />
   <ProduktListe indhold={Pia} filter="Pia Lund" />
-  <IntroKeramiker_clibklap brand="CLIBKLAP" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
+  <IntroKeramiker_clibklap
+    brand="CLIBKLAP"
+    beskrivelse="Iben Harboe er medstifter af brandet CLIBKLAP og medejer af keramiker fællesskabet Viktoria Ceramic Studio. Med kollektionen CLIBKLAP ønsker Iben og hendes partner at videregive kunsthåndværk med liv og sanselighed, så kunderne får en fornemmelse af materialet og hånden bag, som understreger ordet ”håndlavet”."
+  />
   <ProduktListe indhold={ClibKlap} filter="ClibKlap" />
-  <IntroKeramiker_helle brand="HELLE HANSEN" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
+  <IntroKeramiker_helle
+    brand="HELLE HANSEN"
+    beskrivelse="Helles inspiration i hendes arbejde som keramiker kommer fra en sejltur for 10 år siden, hvor hun lavede et sæt dogmer, der gjorde det muligt at lave keramik på et vuggende skib. De seneste år har Helle tilføjet stentøj til sin kollektion og udviklet en silkemat glasur med lava, der er med til at give hendes arbejde dets unikke udseende."
+  />
   <ProduktListe indhold={Helle} filter="Helle Hansen" />
-  <IntroKeramiker_clayform brand="CLAYFORM" beskrivelse="Pia Lund er uddannet fra Designskolen Kolding i 2006 og stifter bag brandet Pia Lund Ceramics. Siden da har Pia været en del af keramiker fællesskabet Viktoria Ceramic Studio." />
+  <IntroKeramiker_clayform
+    brand="CLAYFORM"
+    beskrivelse="Signe Bailey er grundlægger af Clayform og medejer af Viktoria Ceramic Studio. Signe producerer unikke designobjekter, der både har et funktionelt formål og påvirker rummet omkring dem med deres æstetik."
+  />
   <ProduktListe indhold={Clayform} filter="Clayform" />
   <!-- {Andre.length > 0 && <Sektion indhold={Andre} filter="Andre" />} -->
 </main>
@@ -64,8 +78,6 @@ const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clay
 <Footer />
 
 <style>
- 
-
   @media (min-width: 1000px) {
     .liste {
       display: grid;
