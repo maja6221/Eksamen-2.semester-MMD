@@ -9,8 +9,9 @@ const { brand, navn, beskrivelse } = Astro.props;
     <div class="text">
       <h3>Øje for detaljer</h3>
       <p>
-        Mark Lauberg har været keramiker og designer i mere end 30 år, og er medejer af keramiker fællesskabet Viktoria Ceramic Studio. I en lang periode arbejdede Mark primært med kunstneriske genstande – formgivning og skabelse af skulpturer der udforskede det indvendige rum. I
-        dag laver han også kunsthåndværk med et nordisk og minimalistisk udtryk. Imidlertid er glæden ved modellering og et bankende hjerte for detaljer og form stadig reflekteret i Marks seneste produkt: Spirallysestagen.
+        Mark Lauberg har været keramiker og designer i mere end 30 år, og er medejer af keramiker fællesskabet Viktoria Ceramic Studio. I en lang periode arbejdede Mark primært med kunstneriske genstande – formgivning og skabelse af skulpturer der
+        udforskede det indvendige rum. I dag laver han også kunsthåndværk med et nordisk og minimalistisk udtryk. Imidlertid er glæden ved modellering og et bankende hjerte for detaljer og form stadig reflekteret i Marks seneste produkt:
+        Spirallysestagen.
       </p>
       <div class="socialemedier">
         <a href="https://www.instagram.com/marklauberg/">INSTAGRAM</a>
@@ -18,19 +19,14 @@ const { brand, navn, beskrivelse } = Astro.props;
       </div>
     </div>
   </div>
-
-
 </section>
 
 <style>
-
   .socialemedier {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
-    margin-inline: 10%;
-    
-    
+    margin-left: 4.2%;
   }
 
   a {
@@ -41,7 +37,6 @@ const { brand, navn, beskrivelse } = Astro.props;
     color: black;
   }
 
- 
   h2 {
     font-family: "commuters-sans", sans-serif;
     font-size: 40px;
@@ -69,7 +64,6 @@ const { brand, navn, beskrivelse } = Astro.props;
     margin-inline: 10%;
   }
 
-  
   #keramiker4 {
     background-color: #f4ede5;
     padding-bottom: 20px;
@@ -84,16 +78,12 @@ const { brand, navn, beskrivelse } = Astro.props;
     margin-top: 40px;
   }
 
-  
-
   @media (min-width: 1000px) {
-
     .socialemedier {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    justify-items: center;
-    
-  }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
     #keramiker4 {
       display: grid;
       grid-template-columns: 1fr 2fr;
