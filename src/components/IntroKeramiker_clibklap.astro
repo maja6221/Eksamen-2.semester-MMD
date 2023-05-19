@@ -3,36 +3,33 @@ const { brand, navn, beskrivelse } = Astro.props;
 ---
 
 <section id="keramiker2">
-  <img src="/images/iben1.png" alt="" />
+  <img src="/images/iben1.webp" alt="" />
   <div class="clibklap">
     <h2>CLIBKLAP</h2>
     <div class="text">
       <h3>Unik symbolisme</h3>
-      <p>Iben Harboe er medstifter af brandet CLIBKLAP og medejer af keramiker fællesskabet Viktoria Ceramic Studio.
-
-        Med kollektionen CLIBKLAP ønsker Iben Harboe og hendes partner Claire Maria Lehmann at videregive kunsthåndværk med liv og sanselighed, så kunderne får en fornemmelse af materialet og hånden bag, som understreger ordet ”håndlavet”.
-        
-        Iben og Claire skaber deres objekter med øje for funktion og værdsætter de variationer der opstår i produktionen gennem unikke glaserings- og brændeteknikker. Hvert keramisk objekt har sit eget unikke udtryk.</p>
-        <div class="socialemedier">
-          <a href="https://clibklap.dk/">WEBSITE</a>
-          <a href="https://www.instagram.com/clib_klap/">INSTAGRAM</a>
-          <a href="https://www.facebook.com/clibklap.dk/">FACEBOOK</a>
-          <a href="mailto:mail@clibklap.dk">KONTAKT</a>
-        </div>
+      <p>
+        Iben Harboe er medstifter af brandet CLIBKLAP og medejer af keramiker fællesskabet Viktoria Ceramic Studio. Med kollektionen CLIBKLAP ønsker Iben Harboe og hendes partner Claire Maria Lehmann at videregive kunsthåndværk med liv og
+        sanselighed, så kunderne får en fornemmelse af materialet og hånden bag, som understreger ordet ”håndlavet”. Iben og Claire skaber deres objekter med øje for funktion og værdsætter de variationer der opstår i produktionen gennem unikke
+        glaserings- og brændeteknikker. Hvert keramisk objekt har sit eget unikke udtryk.
+      </p>
+      <div class="socialemedier">
+        <a href="https://clibklap.dk/">WEBSITE</a>
+        <a href="https://www.instagram.com/clib_klap/">INSTAGRAM</a>
+        <a href="https://www.facebook.com/clibklap.dk/">FACEBOOK</a>
+        <a href="mailto:mail@clibklap.dk">KONTAKT</a>
       </div>
+    </div>
   </div>
 </section>
 
 <style>
-
-.socialemedier {
+  .socialemedier {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-    margin-inline: 10%;
-    gap: 20px;
-    
-    
+    font-size: 14.5px;
+    margin-left: 6.1%;
   }
 
   a {
@@ -86,12 +83,11 @@ const { brand, navn, beskrivelse } = Astro.props;
 
   @media (min-width: 1000px) {
     .socialemedier {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    padding-left: 8%;
-    
-  }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      padding-left: 8%;
+    }
     #keramiker2 {
       display: grid;
       grid-template-columns: 1fr 2fr;
