@@ -13,7 +13,7 @@ const { brand, navn, beskrivelse } = Astro.props;
         sanselighed, så kunderne får en fornemmelse af materialet og hånden bag, som understreger ordet ”håndlavet”. Iben og Claire skaber deres objekter med øje for funktion og værdsætter de variationer der opstår i produktionen gennem unikke
         glaserings- og brændeteknikker. Hvert keramisk objekt har sit eget unikke udtryk.
       </p>
-      <div class="socialemedier">
+      <div class="socialemedier filter">
         <a href="mailto:mail@clibklap.dk"><img src="/images/mail.png"></a>
         <a href="https://www.facebook.com/clibklap.dk/"><img src="/images/fb.png"></a>
         <a href="https://www.instagram.com/clib_klap/"><img src="/images/ig.png"></a>
@@ -28,6 +28,11 @@ const { brand, navn, beskrivelse } = Astro.props;
     display: flex;
     justify-content: center;
     margin-left: 60px;
+  }
+
+    .socialemedier.filter a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #D87093);
+    cursor: pointer;
   }
 
 .socialemedier img {

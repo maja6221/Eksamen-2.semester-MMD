@@ -13,7 +13,7 @@ const { brand, navn, beskrivelse } = Astro.props;
         og skabe”. Det er motivationen bag Clayform, hvor Signe producerer unikke designobjekter, der både har et funktionelt formål og påvirker rummet omkring dem med deres æstetik. Hendes inspiration kommer fra den store mangfoldighed i form, der
         udgør den menneskelige krop, og verden omkring os på mikroniveau.
       </p>
-      <div class="socialemedier">
+      <div class="socialemedier filter">
         <a href="https://www.clayform.dk/"><img src="/images/hjem.png"></a>
         <a href="https://www.instagram.com/clayform_dk/"><img src="/images/ig.png"></a>
         <a href="https://www.facebook.com/clayform/"><img src="/images/fb.png"></a>
@@ -30,6 +30,10 @@ const { brand, navn, beskrivelse } = Astro.props;
     margin-left: 60px;
   }
 
+      .socialemedier.filter a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #D87093);
+    cursor: pointer;
+  }
 .socialemedier img {
     width: 50%;
     margin: 0;

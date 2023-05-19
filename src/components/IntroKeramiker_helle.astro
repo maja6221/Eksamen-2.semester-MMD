@@ -14,7 +14,7 @@ const { brand, navn, beskrivelse } = Astro.props;
         fyrfadsstager. ” De seneste år har Helle tilføjet stentøj til sin kollektion og udviklet en silkemat glasur med lava, der er med til at give hendes arbejde dets unikke udseende. Hendes produkter er ikke kun dekorative og skulpturelle, men
         skabt til daglig og langvarig brug.
       </p>
-      <div class="socialemedier">
+      <div class="socialemedier filter">
         <a href="http://www.helle-hansen.dk/"><img src="/images/hjem.png"></a>
         <a href="https://www.instagram.com/hellehansenceramics/"><img src="/images/ig.png"></a>
         <a href="mailto:dogmekeramik@gmail.com"><img src="/images/mail.png"></a>
@@ -30,6 +30,10 @@ const { brand, navn, beskrivelse } = Astro.props;
     font-size: 14.5px;
   }
 
+.socialemedier.filter a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #D87093);
+    cursor: pointer;
+  }
 .socialemedier img {
     width: 50%;
     margin: 0;
