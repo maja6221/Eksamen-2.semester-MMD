@@ -14,8 +14,8 @@ const { brand, navn, beskrivelse } = Astro.props;
         Spirallysestagen.
       </p>
       <div class="socialemedier">
-        <a href="https://www.instagram.com/marklauberg/">INSTAGRAM</a>
-        <a href="mailto:marklauberg@gmail.com">KONTAKT</a>
+        <a href="https://www.instagram.com/marklauberg/"><img src="/images/ig.png"></a>
+        <a href="mailto:marklauberg@gmail.com"><img src="/images/mail.png"></a>
       </div>
     </div>
   </div>
@@ -23,11 +23,14 @@ const { brand, navn, beskrivelse } = Astro.props;
 
 <style>
   .socialemedier {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     font-size: 14.5px;
-    margin-left: 6.1%;
+  }
+
+.socialemedier img {
+    width: 50%;
+    margin: 0;
   }
 
   a {
@@ -81,11 +84,11 @@ const { brand, navn, beskrivelse } = Astro.props;
   }
 
   @media (min-width: 1000px) {
-    .socialemedier {
+    /* .socialemedier {
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-items: center;
-    }
+    } */
     #keramiker4 {
       display: grid;
       grid-template-columns: 1fr 2fr;

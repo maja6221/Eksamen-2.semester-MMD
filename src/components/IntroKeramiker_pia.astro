@@ -14,10 +14,10 @@ const { brand, navn, beskrivelse } = Astro.props;
         vaser ’Formidabel’ og krystalinspirerede skåle ’Hapilu’. Desuden skaber Pia Lund også en unika serie af håndmalede lysestager under navnet 'Silhuetter fra Skoven'.
       </p>
       <div class="socialemedier">
-        <a href="https://pialundceramics.com/">WEBSITE</a>
-        <a href="https://www.instagram.com/pialundceramics/">INSTAGRAM</a>
-        <a href="https://www.facebook.com/pialundceramics/">FACEBOOK</a>
-        <a href="mailto:info@pia-lund.dk">KONTAKT</a>
+        <a href="mailto:info@pia-lund.dk"><img src="/images/mail.png"></a>
+        <a href="https://www.facebook.com/pialundceramics/"><img src="/images/fb.png"></a>
+        <a href="https://www.instagram.com/pialundceramics/"><img src="/images/ig.png"></a>
+        <a href="https://pialundceramics.com/"><img src="/images/hjem.png"></a>
       </div>
     </div>
   </div>
@@ -25,11 +25,15 @@ const { brand, navn, beskrivelse } = Astro.props;
 
 <style>
   .socialemedier {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     font-size: 14.5px;
-    margin-left: 6.1%;
+    margin-left: 60px;
+  }
+
+.socialemedier img {
+    width: 50%;
+    margin: 0;
   }
 
   a {

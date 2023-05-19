@@ -14,10 +14,10 @@ const { brand, navn, beskrivelse } = Astro.props;
         glaserings- og brændeteknikker. Hvert keramisk objekt har sit eget unikke udtryk.
       </p>
       <div class="socialemedier">
-        <a href="https://clibklap.dk/">WEBSITE</a>
-        <a href="https://www.instagram.com/clib_klap/">INSTAGRAM</a>
-        <a href="https://www.facebook.com/clibklap.dk/">FACEBOOK</a>
-        <a href="mailto:mail@clibklap.dk">KONTAKT</a>
+        <a href="mailto:mail@clibklap.dk"><img src="/images/mail.png"></a>
+        <a href="https://www.facebook.com/clibklap.dk/"><img src="/images/fb.png"></a>
+        <a href="https://www.instagram.com/clib_klap/"><img src="/images/ig.png"></a>
+        <a href="https://clibklap.dk/"><img src="/images/hjem.png"></a>
       </div>
     </div>
   </div>
@@ -25,11 +25,14 @@ const { brand, navn, beskrivelse } = Astro.props;
 
 <style>
   .socialemedier {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    font-size: 14.5px;
-    margin-left: 6.1%;
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+  }
+
+.socialemedier img {
+    width: 50%;
+    margin: 0;
   }
 
   a {
