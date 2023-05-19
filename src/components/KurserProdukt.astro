@@ -1,9 +1,9 @@
 ---
-const { titel, pris, knap } = Astro.props;
+const { titel, pris, billede} = Astro.props;
 ---
 
 <section class="kurser">
-  <img src="/images/kurser_1.jpg" alt="" />
+  <img src={billede} alt="Kurser hos Viktoria Ceramic Studio" />
   <hr />
   <h4>{titel}</h4>
   <p>{pris}</p>
