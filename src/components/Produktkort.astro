@@ -1,9 +1,9 @@
 ---
-const { image, designer, tekst, overskrift, pris, link, aktiv } = Astro.props;
+const { image, data, designer, tekst, overskrift, pris, link, aktiv } = Astro.props;
 ---
 
-<a href={link}>
-  <article class={aktiv || "inaktiv"}>
+<a href={`shop/${data.id}`}>
+  <article >
     <img src={image} alt="image" />
     <div class="div1">
       <h2>{overskrift}</h2>
