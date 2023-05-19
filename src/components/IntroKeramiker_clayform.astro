@@ -8,32 +8,29 @@ const { brand, navn, beskrivelse } = Astro.props;
     <h2>CLAYFORM</h2>
     <div class="text">
       <h3>Menneskelige former</h3>
-      <p>Signe Bailey er grundlægger af Clayform og medejer af Viktoria Ceramic Studio.
-
-        ”At leve med genstande, der fremkalder en følelsesmæssig forbindelse, og dele det med andre er en luksus. For mig er denne form for luksus et spændende rum at lege og skabe”.
-        
-        Det er motivationen bag Clayform, hvor Signe producerer unikke designobjekter, der både har et funktionelt formål og påvirker rummet omkring dem med deres æstetik. Hendes inspiration kommer fra den store mangfoldighed i form, der udgør den menneskelige krop, og verden omkring os på mikroniveau. Dette fokus på detaljen, det klare udtryk i formsproget og en høj kvalitetsstandard følger med i den kulturelle tradition for dansk keramisk design.
-        
-        Alle hendes produkter er håndlavede i København og formet i hvidt stentøj eller porcelæn.</p>
-        <div class="socialemedier">
-          <a href="https://www.clayform.dk/">WEBSITE</a>
-          <a href="https://www.instagram.com/clayform_dk/">INSTAGRAM</a>
-          <a href="https://www.facebook.com/clayform/">FACEBOOK</a>
-          <a href="mailto:info@clayform.dk">KONTAKT</a>
-        </div>
+      <p>
+        Signe Bailey er grundlægger af Clayform og medejer af Viktoria Ceramic Studio. ”At leve med genstande, der fremkalder en følelsesmæssig forbindelse, og dele det med andre er en luksus. For mig er denne form for luksus et spændende rum at lege
+        og skabe”. Det er motivationen bag Clayform, hvor Signe producerer unikke designobjekter, der både har et funktionelt formål og påvirker rummet omkring dem med deres æstetik. Hendes inspiration kommer fra den store mangfoldighed i form, der
+        udgør den menneskelige krop, og verden omkring os på mikroniveau. Dette fokus på detaljen, det klare udtryk i formsproget og en høj kvalitetsstandard følger med i den kulturelle tradition for dansk keramisk design. Alle hendes produkter er
+        håndlavede i København og formet i hvidt stentøj eller porcelæn.
+      </p>
+      <div class="socialemedier">
+        <a href="https://www.clayform.dk/">WEBSITE</a>
+        <a href="https://www.instagram.com/clayform_dk/">INSTAGRAM</a>
+        <a href="https://www.facebook.com/clayform/">FACEBOOK</a>
+        <a href="mailto:info@clayform.dk">KONTAKT</a>
       </div>
+    </div>
   </div>
 </section>
 
 <style>
-
-.socialemedier {
+  .socialemedier {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     margin-inline: 10%;
-    
-    
+    margin-left: 8.5%;
   }
 
   a {
@@ -67,7 +64,7 @@ const { brand, navn, beskrivelse } = Astro.props;
     padding-bottom: 25px;
     font-weight: bold;
     line-height: 30px;
-   margin-inline: 10%;
+    margin-inline: 10%;
   }
 
   #keramiker1 {
@@ -86,12 +83,11 @@ const { brand, navn, beskrivelse } = Astro.props;
 
   @media (min-width: 1000px) {
     .socialemedier {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    padding-left: 8%;
-    
-  }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      padding-left: 8%;
+    }
     #keramiker1 {
       display: grid;
       grid-template-columns: 1fr 2fr;
