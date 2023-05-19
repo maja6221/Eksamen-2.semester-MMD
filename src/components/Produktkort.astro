@@ -1,8 +1,8 @@
 ---
-const { image, data, designer, tekst, overskrift, pris, link, aktiv } = Astro.props;
+const { image, designer, tekst, overskrift, pris, link, aktiv } = Astro.props;
 ---
 
-<a href={`shop/${data.id}`}>
+<a href={link}>
   <article >
     <img src={image} alt="image" />
     <div class="div1">
