@@ -15,9 +15,9 @@ const { brand, navn, beskrivelse } = Astro.props;
         skabt til daglig og langvarig brug.
       </p>
       <div class="socialemedier filter">
-        <a href="http://www.helle-hansen.dk/"><img src="/images/hjem.png"></a>
-        <a href="https://www.instagram.com/hellehansenceramics/"><img src="/images/ig.png"></a>
-        <a href="mailto:dogmekeramik@gmail.com"><img src="/images/mail.png"></a>
+        <a href="http://www.helle-hansen.dk/"><img src="/images/hjem.png" /></a>
+        <a href="https://www.instagram.com/hellehansenceramics/"><img src="/images/ig.png" /></a>
+        <a href="mailto:dogmekeramik@gmail.com"><img src="/images/mail.png" /></a>
       </div>
     </div>
   </div>
@@ -30,11 +30,11 @@ const { brand, navn, beskrivelse } = Astro.props;
     font-size: 14.5px;
   }
 
-.socialemedier.filter a:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 #D87093);
+  .socialemedier.filter a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #d87093);
     cursor: pointer;
   }
-.socialemedier img {
+  .socialemedier img {
     width: 50%;
     margin: 0;
   }
@@ -73,7 +73,6 @@ const { brand, navn, beskrivelse } = Astro.props;
     line-height: 30px;
     margin-inline: 10%;
   }
-
   #keramiker3 {
     background-color: #f4ede5;
     padding-bottom: 20px;
@@ -140,6 +139,11 @@ const { brand, navn, beskrivelse } = Astro.props;
     section {
       margin-bottom: 40px;
       margin-top: 40px;
+    }
+
+    .socialemedier {
+      padding-bottom: 10px;
+      margin-left: 18%;
     }
   }
 </style>

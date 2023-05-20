@@ -14,10 +14,10 @@ const { brand, navn, beskrivelse } = Astro.props;
         udgør den menneskelige krop, og verden omkring os på mikroniveau.
       </p>
       <div class="socialemedier filter">
-        <a href="https://www.clayform.dk/"><img src="/images/hjem.png"></a>
-        <a href="https://www.instagram.com/clayform_dk/"><img src="/images/ig.png"></a>
-        <a href="https://www.facebook.com/clayform/"><img src="/images/fb.png"></a>
-        <a href="mailto:info@clayform.dk"><img src="/images/mail.png"></a>
+        <a href="https://www.clayform.dk/"><img src="/images/hjem.png" /></a>
+        <a href="https://www.instagram.com/clayform_dk/"><img src="/images/ig.png" /></a>
+        <a href="https://www.facebook.com/clayform/"><img src="/images/fb.png" /></a>
+        <a href="mailto:info@clayform.dk"><img src="/images/mail.png" /></a>
       </div>
     </div>
   </div>
@@ -27,14 +27,14 @@ const { brand, navn, beskrivelse } = Astro.props;
   .socialemedier {
     display: flex;
     justify-content: center;
-    margin-left: 60px;
+    margin-left: 10%;
   }
 
-      .socialemedier.filter a:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 #D87093);
+  .socialemedier.filter a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #d87093);
     cursor: pointer;
   }
-.socialemedier img {
+  .socialemedier img {
     width: 50%;
     margin: 0;
   }
@@ -77,7 +77,6 @@ const { brand, navn, beskrivelse } = Astro.props;
   #keramiker1 {
     background-color: #f4ede5;
     padding-bottom: 20px;
-   
   }
 
   img {
@@ -100,7 +99,6 @@ const { brand, navn, beskrivelse } = Astro.props;
       display: grid;
       grid-template-columns: 1fr 2fr;
       padding-bottom: 0px;
-      
     }
     img {
       margin-left: 200px;
