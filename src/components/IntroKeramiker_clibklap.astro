@@ -7,17 +7,17 @@ const { brand, navn, beskrivelse } = Astro.props;
   <div class="clibklap">
     <h2>CLIBKLAP</h2>
     <div class="text">
-      <h3>Unik symbolisme</h3>
+      <h3>UNIK SYMBOLISME</h3>
       <p>
         Iben Harboe er medstifter af brandet CLIBKLAP og medejer af keramiker fællesskabet Viktoria Ceramic Studio. Med kollektionen CLIBKLAP ønsker Iben Harboe og hendes partner Claire Maria Lehmann at videregive kunsthåndværk med liv og
         sanselighed, så kunderne får en fornemmelse af materialet og hånden bag, som understreger ordet ”håndlavet”. Iben og Claire skaber deres objekter med øje for funktion og værdsætter de variationer der opstår i produktionen gennem unikke
         glaserings- og brændeteknikker. Hvert keramisk objekt har sit eget unikke udtryk.
       </p>
-      <div class="socialemedier">
-        <a href="mailto:mail@clibklap.dk"><img src="/images/mail.png"></a>
-        <a href="https://www.facebook.com/clibklap.dk/"><img src="/images/fb.png"></a>
-        <a href="https://www.instagram.com/clib_klap/"><img src="/images/ig.png"></a>
-        <a href="https://clibklap.dk/"><img src="/images/hjem.png"></a>
+      <div class="socialemedier filter">
+        <a href="mailto:mail@clibklap.dk"><img src="/images/mail.png" /></a>
+        <a href="https://www.facebook.com/clibklap.dk/"><img src="/images/fb.png" /></a>
+        <a href="https://www.instagram.com/clib_klap/"><img src="/images/ig.png" /></a>
+        <a href="https://clibklap.dk/"><img src="/images/hjem.png" /></a>
       </div>
     </div>
   </div>
@@ -27,10 +27,15 @@ const { brand, navn, beskrivelse } = Astro.props;
   .socialemedier {
     display: flex;
     justify-content: center;
-    margin-left: 60px;
+    margin-left: 10%;
   }
 
-.socialemedier img {
+  .socialemedier.filter a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #d87093);
+    cursor: pointer;
+  }
+
+  .socialemedier img {
     width: 50%;
     margin: 0;
   }

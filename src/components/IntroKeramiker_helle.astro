@@ -7,17 +7,17 @@ const { brand, navn, beskrivelse } = Astro.props;
   <div class="Helle">
     <h2>HELLE HANSEN</h2>
     <div class="text">
-      <h3>Skulpturelt brugskunst</h3>
+      <h3>SKULPTURELT BRUGSKUNST</h3>
       <p>
         Helles inspiration i hendes arbejde som keramiker kommer fra en sejltur for 10 år siden, hvor hun lavede et sæt dogmer, der gjorde det muligt at lave keramik på et vuggende skib ”Mit eneste værktøj på båden var en ostehøvl, og det er stadig
         det, jeg bruger i dag til at fremstille lange tynde bånd af ler. Alle objekter er unikke, hver med deres eget lille sving og personlighed. Porcelænsleret har et ædelt udtryk og en gennemskinnelighed, der perfekt komplimenterer mine lamper og
         fyrfadsstager. ” De seneste år har Helle tilføjet stentøj til sin kollektion og udviklet en silkemat glasur med lava, der er med til at give hendes arbejde dets unikke udseende. Hendes produkter er ikke kun dekorative og skulpturelle, men
         skabt til daglig og langvarig brug.
       </p>
-      <div class="socialemedier">
-        <a href="http://www.helle-hansen.dk/"><img src="/images/hjem.png"></a>
-        <a href="https://www.instagram.com/hellehansenceramics/"><img src="/images/ig.png"></a>
-        <a href="mailto:dogmekeramik@gmail.com"><img src="/images/mail.png"></a>
+      <div class="socialemedier filter">
+        <a href="http://www.helle-hansen.dk/"><img src="/images/hjem.png" /></a>
+        <a href="https://www.instagram.com/hellehansenceramics/"><img src="/images/ig.png" /></a>
+        <a href="mailto:dogmekeramik@gmail.com"><img src="/images/mail.png" /></a>
       </div>
     </div>
   </div>
@@ -30,7 +30,11 @@ const { brand, navn, beskrivelse } = Astro.props;
     font-size: 14.5px;
   }
 
-.socialemedier img {
+  .socialemedier.filter a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #d87093);
+    cursor: pointer;
+  }
+  .socialemedier img {
     width: 50%;
     margin: 0;
   }
@@ -69,7 +73,6 @@ const { brand, navn, beskrivelse } = Astro.props;
     line-height: 30px;
     margin-inline: 10%;
   }
-
   #keramiker3 {
     background-color: #f4ede5;
     padding-bottom: 20px;
@@ -136,6 +139,11 @@ const { brand, navn, beskrivelse } = Astro.props;
     section {
       margin-bottom: 40px;
       margin-top: 40px;
+    }
+
+    .socialemedier {
+      padding-bottom: 10px;
+      margin-left: 18%;
     }
   }
 </style>

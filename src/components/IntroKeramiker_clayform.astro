@@ -7,17 +7,17 @@ const { brand, navn, beskrivelse } = Astro.props;
   <div class="clayform">
     <h2>CLAYFORM</h2>
     <div class="text">
-      <h3>Menneskelige former</h3>
+      <h3>MENNESKELIGE FORMER</h3>
       <p>
         Signe Bailey er grundlægger af Clayform og medejer af Viktoria Ceramic Studio. ”At leve med genstande, der fremkalder en følelsesmæssig forbindelse, og dele det med andre er en luksus. For mig er denne form for luksus et spændende rum at lege
         og skabe”. Det er motivationen bag Clayform, hvor Signe producerer unikke designobjekter, der både har et funktionelt formål og påvirker rummet omkring dem med deres æstetik. Hendes inspiration kommer fra den store mangfoldighed i form, der
         udgør den menneskelige krop, og verden omkring os på mikroniveau.
       </p>
-      <div class="socialemedier">
-        <a href="https://www.clayform.dk/"><img src="/images/hjem.png"></a>
-        <a href="https://www.instagram.com/clayform_dk/"><img src="/images/ig.png"></a>
-        <a href="https://www.facebook.com/clayform/"><img src="/images/fb.png"></a>
-        <a href="mailto:info@clayform.dk"><img src="/images/mail.png"></a>
+      <div class="socialemedier filter">
+        <a href="https://www.clayform.dk/"><img src="/images/hjem.png" /></a>
+        <a href="https://www.instagram.com/clayform_dk/"><img src="/images/ig.png" /></a>
+        <a href="https://www.facebook.com/clayform/"><img src="/images/fb.png" /></a>
+        <a href="mailto:info@clayform.dk"><img src="/images/mail.png" /></a>
       </div>
     </div>
   </div>
@@ -27,10 +27,14 @@ const { brand, navn, beskrivelse } = Astro.props;
   .socialemedier {
     display: flex;
     justify-content: center;
-    margin-left: 60px;
+    margin-left: 10%;
   }
 
-.socialemedier img {
+  .socialemedier.filter a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #d87093);
+    cursor: pointer;
+  }
+  .socialemedier img {
     width: 50%;
     margin: 0;
   }
@@ -73,7 +77,6 @@ const { brand, navn, beskrivelse } = Astro.props;
   #keramiker1 {
     background-color: #f4ede5;
     padding-bottom: 20px;
-   
   }
 
   img {
@@ -96,7 +99,6 @@ const { brand, navn, beskrivelse } = Astro.props;
       display: grid;
       grid-template-columns: 1fr 2fr;
       padding-bottom: 0px;
-      
     }
     img {
       margin-left: 200px;

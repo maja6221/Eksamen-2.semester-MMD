@@ -7,15 +7,15 @@ const { brand, navn, beskrivelse } = Astro.props;
   <div class="mark">
     <h2>MARK LAUBERG</h2>
     <div class="text">
-      <h3>Øje for detaljer</h3>
+      <h3>ØJE FOR DETALJER</h3>
       <p>
         Mark Lauberg har været keramiker og designer i mere end 30 år, og er medejer af keramiker fællesskabet Viktoria Ceramic Studio. I en lang periode arbejdede Mark primært med kunstneriske genstande – formgivning og skabelse af skulpturer der
         udforskede det indvendige rum. I dag laver han også kunsthåndværk med et nordisk og minimalistisk udtryk. Imidlertid er glæden ved modellering og et bankende hjerte for detaljer og form stadig reflekteret i Marks seneste produkt:
         Spirallysestagen.
       </p>
-      <div class="socialemedier">
-        <a href="https://www.instagram.com/marklauberg/"><img src="/images/ig.png"></a>
-        <a href="mailto:marklauberg@gmail.com"><img src="/images/mail.png"></a>
+      <div class="socialemedier filter">
+        <a href="https://www.instagram.com/marklauberg/"><img src="/images/ig.png" /></a>
+        <a href="mailto:marklauberg@gmail.com"><img src="/images/mail.png" /></a>
       </div>
     </div>
   </div>
@@ -27,7 +27,12 @@ const { brand, navn, beskrivelse } = Astro.props;
     justify-content: center;
   }
 
-.socialemedier img {
+  .socialemedier.filter a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #d87093);
+    cursor: pointer;
+  }
+
+  .socialemedier img {
     width: 50%;
     margin: 0;
   }
@@ -83,11 +88,11 @@ const { brand, navn, beskrivelse } = Astro.props;
   }
 
   @media (min-width: 1000px) {
-  .socialemedier {
-    display: flex;
-    justify-content: center;
-    margin-left: 100px;
-  }
+    .socialemedier {
+      display: flex;
+      justify-content: center;
+      margin-left: 100px;
+    }
     #keramiker4 {
       display: grid;
       grid-template-columns: 1fr 2fr;

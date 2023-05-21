@@ -16,7 +16,7 @@ export async function getStaticPaths() {
   const data = await response.json();
 
   return data.map((shop) => ({
-    params: { id: shop.id },
+    params: { slug: shop.slug },
     props: { shop },
   }));
 }
@@ -46,6 +46,7 @@ const { shop } = Astro.props;
 <Footer />
 
 <style>
+  /* mobilefirst version*/
   .grid_singleview {
     display: grid;
     grid-template-columns: 1fr;
@@ -54,7 +55,6 @@ const { shop } = Astro.props;
   .billede {
     width: 100%;
     padding: 30px;
-    padding-bottom: 8px;
   }
 
   .overskrift {
@@ -88,7 +88,7 @@ const { shop } = Astro.props;
 
   .plus {
     font-family: "commuters-sans", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 9%;
     border-style: solid;
     border-color: #a9a9a9;
@@ -100,22 +100,64 @@ const { shop } = Astro.props;
   }
 
   button {
-    font-family: "commuters-sans", sans-serif;
     font-size: 15px;
     margin-left: 9%;
     width: 200px;
     border: none;
-    background-color: #343333;
-    color: white;
+    background-color: #977a15;
+    font-family: "Raleway", sans-serif;
+    color: #f4ede5;
+    cursor: pointer;
     padding: 10px;
     margin-top: 15px;
   }
 
   button:hover {
     background-color: whitesmoke;
-    color: #104739;
+    color: #977a15;
   }
 
+  /* tablet version*/
+  @media (min-width: 820px) {
+    .plus {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 15px;
+      margin-left: 9%;
+      border-style: solid;
+      border-color: #a9a9a9;
+      width: 15%;
+      letter-spacing: 12px;
+      padding-left: 20px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+    .overskrift {
+      margin-left: 4%;
+    }
+
+    .designer {
+      margin-left: 4%;
+    }
+
+    .plus {
+      margin-left: 4%;
+    }
+
+    .tekst {
+      margin-left: 4%;
+    }
+
+    .pris {
+      margin-left: 4%;
+    }
+
+    button {
+      margin-left: 4%;
+    }
+  }
+
+  /* desktop version*/
   @media (min-width: 1000px) {
     .grid_singleview {
       display: grid;
@@ -159,11 +201,11 @@ const { shop } = Astro.props;
 
     .plus {
       font-family: "commuters-sans", sans-serif;
-      font-size: 16px;
+      font-size: 15px;
       margin-left: 15%;
       border-style: solid;
       border-color: #a9a9a9;
-      width: 18%;
+      width: 20%;
       letter-spacing: 12px;
       padding-left: 20px;
       padding-top: 2px;
@@ -171,20 +213,21 @@ const { shop } = Astro.props;
     }
 
     button {
-      font-family: "commuters-sans", sans-serif;
+      background-color: #977a15;
+      font-family: "Raleway", sans-serif;
+      color: #f4ede5;
+      cursor: pointer;
       font-size: 15px;
       margin-left: 15%;
       width: 200px;
       border: none;
-      background-color: #343333;
-      color: white;
       padding: 10px;
       margin-top: 20px;
     }
 
     button:hover {
       background-color: whitesmoke;
-      color: #104739;
+      color: #977a15;
     }
   }
 </style>
