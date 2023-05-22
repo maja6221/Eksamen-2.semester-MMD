@@ -1,45 +1,149 @@
 <main>
-<div id="mainGrid">
-  <form>
-    <h1>KONTAKT OS</h1>
-    <hr class="hr1" />
-    <label class="email" for="name">NAVN</label>
-    <div class="name">
-      <div class="form-felt1">
-        <input placeholder="Fornavn" type="email" id="email" name="email" required />
+  <div id="mainGrid">
+    <form>
+      <h1>KONTAKT OS</h1>
+      <hr class="hr1" />
+      <label class="email" for="name">NAVN</label>
+      <div class="name">
+        <div class="form-felt1">
+          <input placeholder="Fornavn" type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-felt2">
+          <input placeholder="Efternavn" type="email" id="email" name="email" required />
+        </div>
       </div>
 
-      <div class="form-felt2">
-        <input placeholder="Efternavn" type="email" id="email" name="email" required />
+      <label class="email" for="email">E-MAIL</label>
+      <div class="form-felt">
+        <input placeholder="f.eks. sophiejensen@gmail.com" type="email" id="email" name="email" required />
       </div>
-    </div>
 
-    <label class="email" for="email">E-MAIL</label>
-    <div class="form-felt">
-      <input placeholder="f.eks. sophiejensen@gmail.com" type="email" id="email" name="email" required />
-    </div>
+      <label class="email" for="email">EMNE</label>
+      <div class="form-felt">
+        <input placeholder="" type="text" id="email" name="kodeord" required />
+      </div>
 
-    <label class="email" for="email">EMNE</label>
-    <div class="form-felt">
-      <input placeholder="" type="text" id="email" name="kodeord" required />
-    </div>
+      <label class="email" for="email">SKRIV DIN BESKED HER</label>
+      <div class="form-felt">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
 
-    <label class="email" for="email">SKRIV DIN BESKED HER</label>
-    <div class="form-felt">
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-    </div>
-
-    <button class="knap" type="submit">SEND</button>
-  </form>
-</div>
+      <button class="knap" type="submit">SEND</button>
+    </form>
+  </div>
 </main>
 <style>
 
-main {
+  form {
+    justify-content: center;
+  }
+  main {
     margin-inline: 15%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
+  .name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+    color: #e6536d;
+  }
+
+  input {
+    font-family: "Raleway", sans-serif;
+  }
+
+  textarea {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .form-felt1 {
+    grid-column: 1;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    width: 30%;
+  }
+
+  .form-felt2 {
+    grid-column: 2;
+    width: 30%;
+
+    padding-bottom: 15px;
+  }
+
+  .navn {
+    grid-column: 1;
+    grid-row: 1;
+    font-family: "commuters-sans", sans-serif;
+  }
+
+  .efternavn {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  form {
+    display: grid;
+    width: 100%;
+    gap: 0.5em;
+    margin-top: 10%;
+  }
+
+  .form-felt {
+    display: grid;
+    gap: 5px;
+    padding-bottom: 15px;
+  }
+
+  .formGap {
+    gap: 1em;
+  }
+
+  #email {
+    padding: 10px;
+    padding-right: 10%;
+  }
+
+  .email {
+    color: #104739;
+    font-family: "commuters-sans", sans-serif;
+  }
+
+  .knap {
+    background-color: #977a15;
+    border: none;
+    color: white;
+    font-family: "commuters-sans", sans-serif;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: unset;
+  }
+
+  .knap:hover {
+    color: #977a15;
+    background-color: whitesmoke;
+  }
+
+  @media (min-width: 1000px) {
+    main {
+      margin-inline: 15%;
+      margin-top: 5%;
+      margin-bottom: 10%;
+    }
+
+    .hr1 {
+      margin-bottom: 2%;
+      border: 0;
+      border-top: 1.5px solid black;
+    }
+    h1 {
+      font-family: "commuters-sans", sans-serif;
+      font-size: 30px;
+
+      padding-bottom: 2%;
+    }
     .name {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -48,23 +152,15 @@ main {
       color: #e6536d;
     }
 
-    input {
-font-family: "Raleway",sans-serif;
-  }
-
-  textarea {
-font-family: "Raleway",sans-serif;
-  }
-
     .form-felt1 {
       grid-column: 1;
-      padding-right: 10px;
+      width: 20%;
       padding-bottom: 15px;
     }
 
     .form-felt2 {
       grid-column: 2;
-
+      width: 20%;
       padding-bottom: 15px;
     }
 
@@ -95,6 +191,9 @@ font-family: "Raleway",sans-serif;
     .form-felt2 {
       align-self: center;
     }
+    #mainGrid {
+      display: grid;
+    }
 
     .formGap {
       gap: 1em;
@@ -102,137 +201,29 @@ font-family: "Raleway",sans-serif;
 
     #email {
       padding: 10px;
-      padding-right: 10%;
+      padding-right: 40%;
     }
 
     .email {
-      color:#104739;
+      color: #104739;
       font-family: "commuters-sans", sans-serif;
-      
     }
 
     .knap {
-      background-color: #977A15;
+      width: 100%;
+      align-items: center;
+      background-color: #977a15;
       border: none;
       color: white;
       font-family: "commuters-sans", sans-serif;
-      padding: 8px;
+      padding: 10px;
       border-radius: 5px;
       font-size: unset;
     }
 
     .knap:hover {
-      color: #977A15;
+      color: #977a15;
       background-color: whitesmoke;
     }
-
-
-
-  @media (min-width: 1000px) {
-
-
-    main {
-  margin-inline: 15%;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  
-}
- 
- .hr1 {
-    margin-bottom: 2%;
-    border: 0;
-    border-top: 1.5px solid  black;
   }
- h1 {
-  font-family: "commuters-sans", sans-serif;
-    font-size: 30px;
-    
-    padding-bottom: 2%;
-  }
-  .name {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    gap: 10px;
-    color: #e6536d;
-  }
-
-  .form-felt1 {
-    grid-column: 1;
-
-    padding-bottom: 15px;
-  }
-
-  .form-felt2 {
-    grid-column: 2;
-
-    padding-bottom: 15px;
-  }
-
-  .navn {
-    grid-column: 1;
-    grid-row: 1;
-    font-family: "commuters-sans", sans-serif;
-  }
-
-  .efternavn {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  form {
-    display: grid;
-    width: 100%;
-    gap: 0.5em;
-    margin-top: 10%;
-  }
-
-  .form-felt {
-    display: grid;
-    gap: 5px;
-    padding-bottom: 15px;
-  }
-
-  .form-felt2 {
-    align-self: center;
-  }
-  #mainGrid {
-    display: grid;
-  }
-
-  .formGap {
-    gap: 1em;
-  }
-
-  #email {
-    padding: 10px;
-    padding-right: 40%;
-    
-  }
-
-  .email {
-    color: #104739;
-    font-family: "commuters-sans", sans-serif;
-    
-  }
-
-  .knap {
-    width: 100%;
-    align-items: center;
-    background-color: #977A15;
-    border: none;
-    color: white;
-    font-family: "commuters-sans", sans-serif;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: unset;
-  }
-
-  .knap:hover {
-    color: #977A15;
-    background-color: whitesmoke;
-  }
-
-  }
-
 </style>
