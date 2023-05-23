@@ -13,7 +13,7 @@
   </div>
 
   <div class="div2">
-    <img src="/images/kontaktimg.webp" alt="" />
+    <center><img src="/images/kontaktimg.webp" alt="" /></center>
   </div>
 </div>
 
@@ -25,11 +25,11 @@
     }
 
     .div2 {
-      margin-inline: 15%;
       margin-top: 5%;
-      margin-bottom: 5%;
-     
+      order: -1;
+    
     }
+    
     .h2_kontakt {
       font-family: "commuters-sans", sans-serif;
       font-size: 23px;
@@ -37,8 +37,7 @@
     }
 
     img {
-      width: 100%;
-      padding-left: 0%;
+      width: 70%;
     }
 
     .grid {
@@ -90,22 +89,20 @@
 
   @media (min-width: 1000px) {
     img {
-    width: 50%;
-   
-  }
+      width: 50%;
+    }
 
   .div1 {
     margin-inline: 15%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
-
   .div2 {
-    margin-inline: 15%;
-    margin-top: 5%;
-    margin-bottom: 0%;
-  }
-
+     
+     margin-top: 5%;
+     order: 1;
+     
+   }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
