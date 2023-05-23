@@ -26,9 +26,11 @@ const { shop } = Astro.props;
 
 <Header />
 
-<div class="grid_singleview">
+<section class="grid_singleview">
+  <div class="img">
   <img class="billede" src={`/produkt_billeder/${shop.image}`} alt="" />
-  <div>
+  </div>
+  <div class="grid2" >
     <img src={shop.image} alt="" />
     <h2 class="overskrift">{shop.overskrift}</h2>
     <h3 class="designer">{shop.designer}</h3>
@@ -40,25 +42,32 @@ const { shop } = Astro.props;
       <p class="plus">- 1 +</p>
     </div>
     <button>TILFØJ TIL KURV</button>
-  </div>
-  <div class="semere">
+
+
+<div class="semere">
+    <hr>
     <div class="col">
-      <hr>
       <p>Detaljer om varen</p>
       <p>+</p>
     </div>
+    <hr>
     <div class="col">
-      <hr>
-      <p>Læs mere om keramikeren</p>
+      <p>Læs om keramikeren</p>
       <p>+</p>
-    </div class="col">
-        <div>
-      <hr>
+    </div>
+    <hr>
+        <div class="col">
       <p>Ofte stillede spørgsmål</p>
       <p>+</p>
     </div>
+    <hr>
+
   </div>
-</div>
+    
+</section>
+
+
+
 
 <Footer />
 
@@ -70,10 +79,22 @@ const { shop } = Astro.props;
     font-size: 15px;
   }
 
-/* .col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
+.semere {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-inline: 9%;
+}
+
+hr {
+  margin-inline: 9%;
+}
 
   .grid_singleview {
     display: grid;
@@ -146,8 +167,6 @@ const { shop } = Astro.props;
     color: #977a15;
   }
 
-  .semere {}
-
   /* tablet version*/
   @media (min-width: 820px) {
     .plus {
@@ -196,6 +215,17 @@ const { shop } = Astro.props;
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+.col {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-inline: 9%;
+}
+
+hr {
+  margin-inline: 9%;
+}
     .billede {
       width: 80%;
       padding: 30px;
@@ -251,7 +281,6 @@ const { shop } = Astro.props;
       color: #f4ede5;
       cursor: pointer;
       font-size: 15px;
-      
       width: 200px;
       border: none;
       padding: 10px;
