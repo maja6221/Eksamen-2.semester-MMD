@@ -41,12 +41,40 @@ const { shop } = Astro.props;
     </div>
     <button>TILFØJ TIL KURV</button>
   </div>
+  <div class="semere">
+    <div class="col">
+      <hr>
+      <p>Detaljer om varen</p>
+      <p>+</p>
+    </div>
+    <div class="col">
+      <hr>
+      <p>Læs mere om keramikeren</p>
+      <p>+</p>
+    </div class="col">
+        <div>
+      <hr>
+      <p>Ofte stillede spørgsmål</p>
+      <p>+</p>
+    </div>
+  </div>
 </div>
 
 <Footer />
 
 <style>
   /* mobilefirst version*/
+
+  .semere p{
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+  }
+
+/* .col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
   .grid_singleview {
     display: grid;
     grid-template-columns: 1fr;
@@ -117,6 +145,8 @@ const { shop } = Astro.props;
     background-color: whitesmoke;
     color: #977a15;
   }
+
+  .semere {}
 
   /* tablet version*/
   @media (min-width: 820px) {
