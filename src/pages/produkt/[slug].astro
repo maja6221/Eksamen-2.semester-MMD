@@ -39,7 +39,7 @@ const { shop } = Astro.props;
     <div>
       <p class="plus">- 1 +</p>
     </div>
-    <button>Tilføj til kurv</button>
+    <button>TILFØJ TIL KURV</button>
   </div>
 </div>
 
@@ -59,20 +59,20 @@ const { shop } = Astro.props;
 
   .overskrift {
     font-family: "commuters-sans", sans-serif;
-    font-size: 26px;
+    font-size: 25px;
     margin-left: 9%;
   }
 
   .designer {
     font-family: "commuters-sans", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 18px;
     margin-left: 9%;
   }
 
   .pris {
     font-family: "commuters-sans", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     margin-left: 9%;
     padding-top: 15px;
   }
@@ -87,8 +87,8 @@ const { shop } = Astro.props;
   }
 
   .plus {
-    font-family: "commuters-sans", sans-serif;
-    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
     margin-left: 9%;
     border-style: solid;
     border-color: #a9a9a9;
@@ -97,6 +97,7 @@ const { shop } = Astro.props;
     padding-left: 15px;
     padding-top: 2px;
     padding-bottom: 2px;
+    text-align: center;
   }
 
   button {
@@ -120,8 +121,8 @@ const { shop } = Astro.props;
   /* tablet version*/
   @media (min-width: 820px) {
     .plus {
-      font-family: "commuters-sans", sans-serif;
-      font-size: 15px;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
       margin-left: 9%;
       border-style: solid;
       border-color: #a9a9a9;
@@ -155,6 +156,8 @@ const { shop } = Astro.props;
     button {
       margin-left: 4%;
     }
+
+  
   }
 
   /* desktop version*/
@@ -164,29 +167,29 @@ const { shop } = Astro.props;
       grid-template-columns: 1fr 1fr;
     }
     .billede {
-      width: 100%;
+      width: 80%;
       padding: 30px;
-      margin-left: 10%;
+      margin-left: 20%;
     }
 
     .overskrift {
       font-family: "commuters-sans", sans-serif;
-      font-size: 26px;
+      font-size: 30px;
       padding-top: 50px;
-      margin-left: 15%;
+     
     }
 
     .designer {
       font-family: "commuters-sans", sans-serif;
-      font-size: 20px;
+      font-size: 15px;
       padding-top: 22px;
-      margin-left: 15%;
+      
     }
 
     .pris {
       font-family: "commuters-sans", sans-serif;
-      font-size: 15.5px;
-      margin-left: 15%;
+      font-size: 15px;
+   
       padding-top: 18px;
     }
 
@@ -196,13 +199,13 @@ const { shop } = Astro.props;
       font-size: 15px;
       padding-top: 20px;
       padding-bottom: 24px;
-      margin-left: 15%;
+      
     }
 
     .plus {
-      font-family: "commuters-sans", sans-serif;
-      font-size: 15px;
-      margin-left: 15%;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      
       border-style: solid;
       border-color: #a9a9a9;
       width: 20%;
@@ -218,7 +221,7 @@ const { shop } = Astro.props;
       color: #f4ede5;
       cursor: pointer;
       font-size: 15px;
-      margin-left: 15%;
+      
       width: 200px;
       border: none;
       padding: 10px;
