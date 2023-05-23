@@ -5,7 +5,9 @@
     <p>Vi deltager også på forskellige internationale udstillinger og messer, hvor vi sælger vores ting direkte til de besøgende.</p>
     <p>Nedenstående kan du se hvilke forskellige kommende event vi laver og deltager i.</p>
   </div>
-  <img class="img1" src="../images/event_image.webp" alt="" />
+  <div class="divimg">
+    <center><img class="img1" src="../images/eventsimg.webp" alt="" /></center>
+  </div>
 </div>
 
 <div class="grid1">
@@ -50,7 +52,11 @@
   }
 
   .div1 {
-    margin-left: -4%;
+    margin-inline: 15%;
+  }
+
+  .divimg {
+    order: -1;
   }
 
   .grid1 {
@@ -72,18 +78,15 @@
   }
 
   .img1 {
-    margin-left: 8%;
-    padding-top: 5px;
-    padding-bottom: 30px;
-    width: 83%;
+    width: 70%;
   }
 
   .overskrift_events {
     font-family: "commuters-sans", sans-serif;
     font-size: 25px;
     padding-bottom: 30px;
-    margin-left: 12%;
-    padding-top: 20px;
+
+   
   }
 
   p {
@@ -91,7 +94,6 @@
     line-height: 1.5em;
     font-size: 15px;
     padding-bottom: 15px;
-    margin-left: 12%;
   }
 
   h3 {
@@ -125,10 +127,7 @@
 
   /* ipad/tablet version */
   @media (min-width: 820px) {
-    .overskrift_events {
-      margin-left: 12%;
-      padding-top: 40px;
-    }
+   
 
     button {
       border: none;
@@ -149,7 +148,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       background-color: #f4ede5;
-      padding-bottom: 45px;
     }
 
     .grid1 {
@@ -160,11 +158,13 @@
     }
 
     .img1 {
-      width: 75%;
-      padding-top: 60px;
-      padding-bottom: 20px;
-      margin-left: 10%;
+      width: 50%;
+      
     }
+
+    .divimg {
+    order: 1;
+  }
 
     .img2 {
       width: 90%;
@@ -181,8 +181,6 @@
       font-family: "commuters-sans", sans-serif;
       font-size: 30px;
       padding-bottom: 30px;
-      margin-left: 16.2%;
-      padding-top: 60px;
     }
 
     p {
@@ -190,7 +188,6 @@
       line-height: 1.5em;
       font-size: 15px;
       padding-bottom: 20px;
-      margin-left: 16.2%;
     }
 
     h3 {
@@ -221,6 +218,10 @@
     button:hover {
       background-color: whitesmoke;
       color: #977a15;
+    }
+
+    .div1 {
+      margin-inline: 15%;
     }
   }
 </style>
