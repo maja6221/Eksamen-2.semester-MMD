@@ -5,14 +5,14 @@ const { titel, pris, billede } = Astro.props;
 <section class="kurser">
   <img src={billede} alt="Kurser hos Viktoria Ceramic Studio" />
   <hr />
-  <h4>{titel}</h4>
+  <h2>{titel}</h2>
   <p>{pris}</p>
   <button>TILFØJ TIL KURV</button>
   <hr />
 </section>
 
 <style>
-  h4 {
+  h2 {
     font-family: "commuters-sans", sans-serif;
     font-size: 20px;
     margin: 20px;
@@ -47,7 +47,7 @@ const { titel, pris, billede } = Astro.props;
     padding: 8px;
     background-color: #977a15;
     font-family: "Raleway", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     border-radius: 5px;
     color: #f4ede5;
     cursor: pointer;
